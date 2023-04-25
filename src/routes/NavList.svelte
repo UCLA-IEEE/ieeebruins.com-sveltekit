@@ -10,16 +10,36 @@
 </script>
 
 <li>
-	<a href="/about">
-		About
+	<a href="/projects" role="button" class="btn text-base-100">Projects</a>
+</li>
+<li>
+	<a href="/workshops" role="button" class="btn text-base-100">Workshops</a>
+</li>
+<li><a href="/lab" role="button" class="btn text-base-100">Lab</a></li>
+<li>
+	<a href="/sponsors" role="button" class="btn text-base-100">Sponsors</a>
+</li>
+<li>
+	<button tabindex="0" class="btn text-base-100">
+		<span>About</span>
 		<svelte:component this={dropdownIcon} />
-	</a>
-	<ul class="bg-base-100 p-2 shadow">
-		<li><a href="/officers">Officers</a></li>
-		<li><a href="/edi">EDI</a></li>
+	</button>
+	<ul class="dropdown-content backdrop-blur-lg gap-2 p-2">
+		<li>
+			<a href="/about" role="button" class="btn text-base-100 border-text-content">About</a>
+		</li>
+		<li>
+			<a href="/officers" role="button" class="btn text-base-100">Officers</a>
+		</li>
+		<li>
+			<a href="/edi" role="button" class="btn text-base-100">EDI</a>
+		</li>
 	</ul>
 </li>
-<li><a href="/projects">Projects</a></li>
-<li><a href="/workshops">Workshops</a></li>
-<li><a href="/lab">Lab</a></li>
-<li><a href="/sponsors">Sponsors</a></li>
+
+<style>
+	a,
+	button {
+		filter: drop-shadow(0.1rem 0.1rem 0 hsl(var(--s)));
+	}
+</style>
