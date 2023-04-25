@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	daisyui: {
@@ -19,7 +21,11 @@ export default {
 		]
 	},
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				sans: ['Work Sans', ...defaultTheme.fontFamily.sans]
+			}
+		}
 	},
 	plugins: [require('daisyui')]
 };
