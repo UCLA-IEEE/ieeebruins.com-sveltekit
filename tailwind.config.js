@@ -7,7 +7,7 @@ export default {
 		themes: [
 			{
 				ieeebruins: {
-					primary: '#0091E6',
+					primary: '#00629B',
 					secondary: '#F144C0',
 					accent: '#00D595',
 					neutral: '#3D4451',
