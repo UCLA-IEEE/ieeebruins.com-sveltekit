@@ -12,7 +12,7 @@
 	<input id="navbar-drawer" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Desktop navbar -->
-		<div class="navbar absolute max-w-screen-lg self-center mt-5 px-5 rounded">
+		<div class="navbar z-50 absolute max-w-screen-lg self-center mt-5 px-5 rounded">
 			<!-- IEEE at UCLA icon -->
 			<div class="navbar-start">
 				<a
@@ -42,12 +42,48 @@
 
 		<!-- Page content -->
 		<slot />
+
+		<footer class="flex w-full justify-center bg-base-200">
+			<div class="flex max-w-screen-lg m-5 justify-between flex-1 items-center">
+				<span class="text-xl">© IEEE at UCLA</span>
+				<div class="text-xl">
+					<a
+						role="button"
+						href="https://www.instagram.com/uclaieee/"
+						class="btn btn-circle btn-outline"
+					>
+						<img
+							alt="Instagram logo"
+							height="32"
+							width="32"
+							src="https://unpkg.com/simple-icons@v8/icons/instagram.svg"
+						/>
+					</a>
+					<a role="button" href="https://github.com/UCLA-IEEE/" class="btn btn-circle btn-outline">
+						<img
+							alt="GitHub logo"
+							height="32"
+							width="32"
+							src="https://unpkg.com/simple-icons@v8/icons/github.svg"
+						/>
+					</a>
+					<a role="button" href="https://discord.gg/RREtsea" class="btn btn-circle btn-outline">
+						<img
+							alt="Discord logo"
+							height="32"
+							width="32"
+							src="https://unpkg.com/simple-icons@v8/icons/discord.svg"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 
 	<!-- Mobile sidebar -->
 	<div class="drawer-side">
 		<label for="navbar-drawer" class="drawer-overlay backdrop-blur" />
-		<ul class="menu bg-base-200 p-2 w-1/4 gap-2">
+		<ul class="menu bg-base-200 p-2 w-1/2 gap-2">
 			<NavList dropdownIcon={ChevronRight} />
 		</ul>
 	</div>
