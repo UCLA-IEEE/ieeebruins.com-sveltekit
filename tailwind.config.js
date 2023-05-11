@@ -8,7 +8,7 @@ export default {
 			{
 				ieeebruins: {
 					primary: '#00629B',
-					secondary: '#F144C0',
+					secondary: '#E4C63F',
 					accent: '#00D595',
 					neutral: '#3D4451',
 					'base-100': '#FFFFFF',
