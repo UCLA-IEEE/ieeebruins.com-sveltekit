@@ -2,6 +2,7 @@
 	import '../app.css';
 
 	import IeeeLogo from '../lib/components/IeeeLogo.svelte';
+	import FooterButton from './FooterButton.svelte';
 
 	import NavList from './NavList.svelte';
 	import { Menu, ChevronDown, ChevronRight } from 'lucide-svelte';
@@ -47,34 +48,13 @@
 			<div class="flex max-w-screen-lg m-5 justify-between flex-1 items-center">
 				<span class="text-xl">© IEEE at UCLA</span>
 				<div class="text-xl">
-					<a
-						role="button"
+					<FooterButton
 						href="https://www.instagram.com/uclaieee/"
-						class="btn btn-circle btn-outline"
-					>
-						<img
-							alt="Instagram logo"
-							height="32"
-							width="32"
-							src="https://unpkg.com/simple-icons@v8/icons/instagram.svg"
-						/>
-					</a>
-					<a role="button" href="https://github.com/UCLA-IEEE/" class="btn btn-circle btn-outline">
-						<img
-							alt="GitHub logo"
-							height="32"
-							width="32"
-							src="https://unpkg.com/simple-icons@v8/icons/github.svg"
-						/>
-					</a>
-					<a role="button" href="https://discord.gg/RREtsea" class="btn btn-circle btn-outline">
-						<img
-							alt="Discord logo"
-							height="32"
-							width="32"
-							src="https://unpkg.com/simple-icons@v8/icons/discord.svg"
-						/>
-					</a>
+						alt="Instagram logo"
+						iconSlug="instagram"
+					/>
+					<FooterButton href="https://github.com/UCLA-IEEE/" alt="GitHub logo" iconSlug="github" />
+					<FooterButton href="https://discord.gg/RREtsea" alt="Discord logo" iconSlug="discord" />
 				</div>
 			</div>
 		</footer>
