@@ -24,9 +24,9 @@
 		<span>About</span>
 		<svelte:component this={dropdownIcon} />
 	</button>
-	<ul class="dropdown-content backdrop-blur-lg gap-2 p-2">
+	<ul class="dropdown-content gap-2 p-2 backdrop-blur-lg">
 		<li>
-			<a href="/about" role="button" class="btn text-base-100 border-text-content">About</a>
+			<a href="/about" role="button" class="border-text-content btn text-base-100">About</a>
 		</li>
 		<li>
 			<a href="/officers" role="button" class="btn text-base-100">Officers</a>

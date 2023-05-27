@@ -12,19 +12,19 @@
 	<div class="hero-content text-center">
 		<div class="max-w-max">
 			<h1
-				class="flex items-center glass gap-8 text-5xl lg:text-9xl text-base-100 font-black m-10 bg-primary bg-opacity-80 p-2"
+				class="glass m-10 flex items-center gap-8 bg-primary bg-opacity-80 p-2 text-5xl font-black text-base-100 lg:text-9xl"
 			>
 				<IeeeLogo color="#ffffff" className="w-28 h-28" />
 				<span> IEEE at UCLA </span>
 			</h1>
-			<h2 class="text-5xl text-base-100 font-bold">
+			<h2 class="text-5xl font-bold text-base-100">
 				<span class="bg-primary"> Hands-On Engineering </span>
 			</h2>
 		</div>
 	</div>
 </div>
 
-<div class="flex flex-col lg:flex-row self-center max-w-screen-lg my-8 mx-4 gap-4">
+<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:flex-row">
 	<div class="lg:w-1/2">
 		<Header text="About Us" />
 		<p class="mb-2">
@@ -42,8 +42,8 @@
 	<div class="lg:divider lg:divider-horizontal" />
 	<div class="lg:w-1/2">
 		<Header text="Get Involved" />
-		<p class="text-xl mb-2">Keep up with all our upcoming events, workshops, and socials.</p>
-		<div class="flex flex-col self-center gap-4">
+		<p class="mb-2 text-xl">Keep up with all our upcoming events, workshops, and socials.</p>
+		<div class="flex flex-col gap-4 self-center">
 			<CtaButton
 				href="https://discord.gg/RREtsea"
 				iconSlug="discord"
@@ -66,7 +66,7 @@
 	</div>
 </div>
 
-<div class="flex self-center w-full max-w-screen-lg my-8 mx-4">
+<div class="mx-4 my-8 flex w-full max-w-screen-lg self-center">
 	<Header text="Events" />
 </div>
 

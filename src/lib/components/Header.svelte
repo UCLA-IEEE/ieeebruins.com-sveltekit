@@ -3,8 +3,8 @@
 </script>
 
 <div class="flex">
-	<h1 class="font-bold text-4xl mb-2">
+	<h1 class="mb-2 text-4xl font-bold">
 		{text}
 	</h1>
-	<span class="font-bold text-4xl text-primary select-none inline-flex">&nbsp;/</span>
+	<span class="inline-flex select-none text-4xl font-bold text-primary">&nbsp;/</span>
 </div>
