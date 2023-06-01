@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
 	import CtaButton from './CtaButton.svelte';
 
 	import ops from '$lib/images/ops.jpg';
 	import IeeeLogo from '$lib/components/IeeeLogo.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import SimpleIcon from '$lib/components/SimpleIcon.svelte';
 </script>
 
 <div class="hero min-h-screen" style="background-image: url({ops})">
