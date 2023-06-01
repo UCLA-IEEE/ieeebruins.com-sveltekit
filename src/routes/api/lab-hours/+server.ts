@@ -38,8 +38,6 @@ export async function GET() {
 			row[2] === undefined || row[2].trim() === '' ? [] : row[2].split('\n').map((c) => c.trim());
 	});
 
-	console.log(hours);
-
 	return json({
 		abilities: {
 			classes,

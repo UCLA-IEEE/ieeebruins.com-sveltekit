@@ -1,0 +1,311 @@
+<script lang="ts">
+	let labDataPromise: Promise<any>;
+	labDataPromise = fetch('/api/lab-hours').then((response) => response.json());
+
+	const times = [
+		'10:00 AM',
+		'11:00 AM',
+		'12:00 PM',
+		'1:00 PM',
+		'2:00 PM',
+		'3:00 PM',
+		'4:00 PM',
+		'5:00 PM'
+	];
+</script>
+
+{#await labDataPromise}
+	<div class="loading">Still waiting my bois</div>
+{:then labData}
+	<div class="overflow-x-auto">
+		<table class="table">
+			<!-- head -->
+			<thead>
+				<tr>
+					<th>PST</th>
+					<th>MONDAY</th>
+					<th>TUESDAY</th>
+					<th>WEDNESDAY</th>
+					<th>THURSDAY</th>
+					<th>FRIDAY</th>
+					<th>SAT/SUN</th>
+				</tr>
+			</thead>
+			<tbody>
+				{#each times as time, i}
+					<tr>
+						<th>time</th>
+						{#each labData.hours[i] as officers}
+							<th>
+								{officers}
+							</th>
+						{/each}
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
+{:catch error}
+	<div class="alert">
+		Something went wrong: {error}
+	</div>
+{/await}
+
+<style>
+	.lab-hours {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.lab-hours h1,
+	.resources h1 {
+		border-bottom: solid black 10px;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0 15px 5px;
+	}
+
+	.pbox {
+		padding: 10px;
+		max-width: 1010px;
+		margin: 0 auto;
+	}
+
+	.color-square {
+		display: inline-block;
+		height: 1em;
+		width: 1em;
+		margin-right: -0.1em;
+		margin-bottom: -0.15em;
+		background-color: var(--ieee-blue);
+	}
+
+	table {
+		margin-top: 15px;
+		margin-bottom: 50px;
+		border-collapse: collapse;
+		border-spacing: 10px;
+		border: 3px solid #ddd;
+		/*  background-color: rgba(117, 120, 123, 0.5);*/
+	}
+	.table-wrapper {
+		margin: auto;
+		display: inline-block;
+	}
+	.lab-hours,
+	.resources {
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	th,
+	td {
+		font-size: 16px;
+		text-align: left;
+		padding: 10px 20px;
+		font-family: Arial, sans-serif;
+	}
+	th#date {
+		font-weight: bold;
+		color: white;
+		font-size: 17px;
+	}
+	td#time {
+		font-weight: bold;
+		font-size: 17px;
+	}
+	td {
+		position: relative;
+	}
+	tr:nth-child(even) {
+		background-color: white;
+	}
+	tr#top {
+		background-color: var(--ieee-blue);
+		color: white;
+	}
+
+	/* td.happy-hour,
+span.happy-hour {
+  background-color: #00629b80;
+} */
+	td.ops,
+	span.ops {
+		background-color: #c6282880;
+	}
+	td.mm,
+	span.mm {
+		background-color: #e6510080;
+	}
+	td.pr,
+	span.pr {
+		background-color: #2e7d3280;
+	}
+	td.dav,
+	span.dav {
+		background-color: var(--ieee-blue-alpha);
+	}
+	td.wrap,
+	span.wrap {
+		background-color: #7e57c280;
+	}
+
+	/* Legend */
+	#legend {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+		position: relative;
+		top: -15px;
+
+		max-width: 600px;
+		margin: auto;
+		font-size: 16px;
+	}
+
+	#legend .entry {
+		margin: 5px;
+	}
+
+	/* Tooltips */
+	.flex-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.abilities {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		left: calc(100% - 5px);
+		padding: 10px 5px;
+		z-index: 1;
+
+		color: black;
+		background-color: white;
+		-webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+		filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
+
+		visibility: hidden;
+	}
+
+	.abilities::before {
+		content: ' ';
+		position: absolute;
+		left: -5px;
+		z-index: -1;
+
+		transform: rotate(45deg);
+
+		border: 10px solid white;
+	}
+
+	.abilities[data-col='5'] {
+		left: unset;
+		right: 100%;
+	}
+
+	.abilities[data-col='5']::before {
+		border: transparent;
+	}
+
+	.abilities[data-col='5']::after {
+		content: ' ';
+		position: absolute;
+		right: -5px;
+		z-index: -1;
+
+		transform: rotate(45deg);
+
+		border: 10px solid white;
+	}
+
+	.abilities .inner-wrapper {
+		display: flex;
+	}
+
+	.abilities span {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	.abilities .classes {
+		width: 100px;
+	}
+
+	.abilities p {
+		border-bottom: 2px solid black;
+		margin-bottom: 0.3em;
+	}
+
+	.abilities div {
+		padding-left: 5px;
+	}
+
+	.abilities .classes div {
+		max-height: 90px;
+		overflow-y: auto;
+		box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2) inset;
+	}
+
+	td:hover .abilities {
+		visibility: visible;
+	}
+
+	@media (max-width: 1400px) {
+		.abilities[data-col='4'] {
+			left: unset;
+			right: 100%;
+		}
+
+		.abilities[data-col='4']::before {
+			border: transparent;
+		}
+
+		.abilities[data-col='4']::after {
+			content: ' ';
+			position: absolute;
+			right: -5px;
+			z-index: -1;
+
+			transform: rotate(45deg);
+
+			border: 10px solid white;
+		}
+	}
+
+	@media (max-width: 1075px) {
+		.abilities[data-col='3'] {
+			left: unset;
+			right: 100%;
+		}
+
+		.abilities[data-col='3']::before {
+			border: transparent;
+		}
+
+		.abilities[data-col='3']::after {
+			content: ' ';
+			position: absolute;
+			right: -5px;
+			z-index: -1;
+
+			transform: rotate(45deg);
+
+			border: 10px solid white;
+		}
+	}
+
+	@media (max-width: 1052px) {
+		th,
+		td {
+			font-size: 15px;
+		}
+		th#date,
+		td#time {
+			font-size: 13px;
+		}
+	}
+</style>
