@@ -1,6 +1,15 @@
 <script lang="ts">
-	let labDataPromise: Promise<any>;
-	labDataPromise = fetch('/api/lab-hours').then((response) => response.json());
+	// TODO: `fetch` must be inside an async function, otherwise SvelteKit will
+	// complain:
+	//
+	// Error: Cannot call `fetch` eagerly during server side rendering with
+	// relative URL (/api/lab-hours) — put your `fetch` calls inside `onMount` or
+	// a `load` function instead
+	async function fetchLabData() {
+		return fetch('/api/lab-hours').then((response) => response.json());
+	}
+
+	let labDataPromise = fetchLabData();
 
 	const times = [
 		'10:00 AM',
