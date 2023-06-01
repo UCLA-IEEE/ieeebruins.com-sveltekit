@@ -4,6 +4,7 @@
 	import ops from '$lib/images/ops.jpg';
 	import IeeeLogo from '$lib/components/IeeeLogo.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import LabHours from '$lib/components/LabHours.svelte';
 </script>
 
 <div class="hero min-h-screen" style="background-image: url({ops})">
@@ -65,8 +66,9 @@
 	</div>
 </div>
 
-<div class="mx-4 my-8 flex w-full max-w-screen-lg self-center">
+<div class="mx-4 my-8 flex w-full max-w-screen-lg flex-col self-center">
 	<Header text="Events" />
+	<LabHours />
 </div>
 
 <style>
