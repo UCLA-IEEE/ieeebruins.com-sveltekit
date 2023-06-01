@@ -45,9 +45,11 @@
 					<tr>
 						<th>{time}</th>
 						{#each labData.hours[i] as officers}
-							<th>
+						<th>
+							<div class="tooltip" data-tip={labData.abilities.classes[officers] ?? "No Classes :("}>
 								{officers}
-							</th>
+						  	</div>
+						</th>
 						{/each}
 					</tr>
 				{/each}
