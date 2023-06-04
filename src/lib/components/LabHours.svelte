@@ -24,67 +24,57 @@
 
 	function getClasses(officers: string, labData: any) {
 		// officers is a string of officers, separated by newlines
-		const officersList = officers.split("\n");
+		const officersList = officers.split('\n');
 		const officerClasses = labData.abilities.classes;
 
 		const classesSet = new Set();
 
-		if (officersList[0] === "Check Discord") {
+		if (officersList[0] === 'Check Discord') {
 			// console.log(`Discord`);
-			return "Check Discord";
+			return 'Check Discord';
 		}
 
 		// for each officer, get the classes and put them together
 		officersList.forEach((officer) => {
-			
-			
-			
 			if (officer in officerClasses) {
 				const officer_classes = officerClasses[officer];
 				// console.log(`${officer} :${officer_classes}`);
 				officer_classes.forEach((c: string) => {
 					classesSet.add(c);
-				})
+				});
 			}
-
-		})
+		});
 
 		return Array.from(classesSet).join('<br>');
-
 	}
 
 	function getCheckoffs(officers: string, labData: any) {
-		const officersList = officers.split("/n");
+		const officersList = officers.split('\n');
 		const officerCheckoffs = labData.abilities.checkoffs;
 
 		const checkoffsSet = new Set();
 
-		if (officersList[0] === "Check Discord") {
+		if (officersList[0] === 'Check Discord') {
 			// console.log(`Discord`);
-			return "Check Discord";
+			return 'Check Discord';
 		}
 
-		// for each officer, get the classes and put them together
+		// for each officer, get checkoffs and put them together
 		officersList.forEach((officer) => {
 			if (officer in officerCheckoffs) {
 				const officer_checkoffs = officerCheckoffs[officer];
-				console.log(`${officer} :${officer_checkoffs}`);
 				officer_checkoffs.forEach((c: string) => {
 					checkoffsSet.add(c);
-				})
+				});
 			}
-
-		})
+		});
 
 		return Array.from(checkoffsSet).join('<br>');
 	}
-
-
-
 </script>
 
 {#await labDataPromise}
-	<span class="loading loading-spinner loading-sm"></span>
+	<span class="loading-spinner loading-sm loading" />
 {:then labData}
 	<div class="overflow-x-auto">
 		<table class="table">
@@ -102,31 +92,40 @@
 			</thead>
 			<tbody>
 				{#each times as time, i}
-					<tr>
+					<tr class="p-0">
 						<th>{time}</th>
 						{#each labData.hours[i] as officers, j}
-
-							<td>
-								<label for="my_modal_{i}_{j}" class="w-full h-full">
-									<div class="hover:bg-sky-400">
-										{@html officers.split("\n").join("<br>")}
+							<td class="p-0">
+								<label for="my_modal_{i}_{j}">
+									<div class="h-36 p-2 hover:bg-slate-50">
+										{@html officers.split('\n').join('<br>')}
 									</div>
 								</label>
 								<!-- Put this part before </body> tag -->
 								<input type="checkbox" id="my_modal_{i}_{j}" class="modal-toggle" />
 								<div class="modal">
-									<div class="modal-box select-none w-96">
-										<label for="my_modal_{i}_{j}" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</label>
-										<h3 class="font-bold text-lg">Classes</h3>
-										{@html getClasses(officers, labData)}
-										<br>
-										<h3 class="font-bold text-lg">Checkoffs</h3>	
-										// get checkoffs here
+									<div class="modal-box max-h-80 w-96 select-none">
+										<label
+											for="my_modal_{i}_{j}"
+											class="btn-ghost btn-sm btn-circle btn absolute right-2 top-2">✕</label
+										>
+										<table class="w-full">
+											<tr>
+												<td class="text-lg font-bold">Classes</td>
+												<td class="text-lg font-bold">Checkoffs</td>
+											</tr>
+											<tr>
+												<td class="w-1/2 align-top">
+													{@html getClasses(officers, labData)}
+												</td>
+												<td class="w-1/2 align-top">
+													{@html getCheckoffs(officers, labData)}
+												</td>
+											</tr>
+										</table>
 									</div>
 								</div>
 							</td>
-							
-
 						{/each}
 					</tr>
 				{/each}
@@ -138,4 +137,3 @@
 		Something went wrong: {error}
 	</div>
 {/await}
-
