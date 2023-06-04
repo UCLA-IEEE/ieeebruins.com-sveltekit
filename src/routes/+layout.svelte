@@ -13,13 +13,13 @@
 	<input id="navbar-drawer" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col">
 		<!-- Desktop navbar -->
-		<div class="navbar z-50 absolute max-w-screen-lg self-center mt-5 px-5 rounded">
+		<div class="navbar absolute z-50 mt-5 max-w-screen-lg self-center rounded px-5">
 			<!-- IEEE at UCLA icon -->
 			<div class="navbar-start">
 				<a
 					role="button"
 					href="/"
-					class="btn btn-primary btn-md normal-case text-2xl gap-2 text-base-100 drop-shadow-lg drop-shadow-base-100"
+					class="drop-shadow-base-100 btn-primary btn-md btn gap-2 text-2xl normal-case text-base-100 drop-shadow-lg"
 				>
 					<IeeeLogo color={'#ffffff'} className={'w-8 h-8'} />
 					<span> IEEE at UCLA </span>
@@ -27,15 +27,15 @@
 			</div>
 
 			<!-- Desktop navigation list -->
-			<div class="justify-end hidden lg:flex dropdown dropdown-end">
-				<ul class="menu menu-horizontal p-2 gap-2">
+			<div class="dropdown-end dropdown hidden justify-end lg:flex">
+				<ul class="menu menu-horizontal gap-2 p-2">
 					<NavList dropdownIcon={ChevronDown} />
 				</ul>
 			</div>
 
 			<!-- Menu button to toggle sidebar, only shown on mobile -->
 			<div class="navbar-end lg:hidden">
-				<label for="navbar-drawer" class="btn btn-primary btn-circle">
+				<label for="navbar-drawer" class="btn-primary btn-circle btn">
 					<Menu color={'#ffffff'} />
 				</label>
 			</div>
@@ -45,7 +45,7 @@
 		<slot />
 
 		<footer class="flex w-full justify-center bg-base-200">
-			<div class="flex max-w-screen-lg m-5 justify-between flex-1 items-center">
+			<div class="m-5 flex max-w-screen-lg flex-1 items-center justify-between">
 				<span class="text-xl">© IEEE at UCLA</span>
 				<div class="text-xl">
 					<FooterButton
@@ -63,7 +63,7 @@
 	<!-- Mobile sidebar -->
 	<div class="drawer-side">
 		<label for="navbar-drawer" class="drawer-overlay backdrop-blur" />
-		<ul class="menu bg-base-200 p-2 w-1/2 gap-2">
+		<ul class="menu w-1/2 gap-2 bg-base-200 p-2">
 			<NavList dropdownIcon={ChevronRight} />
 		</ul>
 	</div>

@@ -1,38 +1,59 @@
-# create-svelte
+# ieeebruins.com in SvelteKit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+ieeebruins.com is the website for IEEE at UCLA. This repository is a rewrite in
+SvelteKit. The [original repo](https://github.com/UCLA-IEEE/ieeebruins.com) is
+written in PHP.
 
-## Creating a project
+## Getting Started
 
-If you're seeing this, you've probably already done this step. Congrats!
+1. `git clone` this repository.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+2. Run `npm install` to download all the dependencies.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start a development server:
 
-```bash
+```sh
 npm run dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
+When the terminal is open, you can press "o" to open the app in a new browser
+tab.
 
-To create a production version of your app:
+Any changes saved in a file will automatically trigger a website refresh. (Hot
+module replacement is really cool!)
 
-```bash
-npm run build
+## Architecture
+
+ieeebruins.com is written in [SvelteKit](https://kit.svelte.dev/), with
+[Tailwind CSS](https://tailwindcss.com/) and [DaisyUI](https://daisyui.com/) for
+styling.
+
+[Lucide](https://github.com/lucide-icons/lucide/tree/main/packages/lucide-svelte#how-to-use)
+is used for icons. For brand icons like the Discord logo, we have a custom
+component named `SimpleIcon.svelte` under `$lib/components` that [uses a
+CDN](https://github.com/simple-icons/simple-icons#cdn-usage).
+
+Theme colors are defined in `tailwind.config.js`. Primary and secondary should
+not be changed:
+
+```js
+"primary": "#00629B", // IEEE blue
+"secondary": "#E4C63F" // Yellow used in our social media graphics
 ```
 
-You can preview the production build with `npm run preview`.
+## Resources
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Svelte: <https://learn.svelte.dev/tutorial/welcome-to-svelte>
+  - Just the "Introduction" section is enough for our website
+- SvelteKit: <https://learn.svelte.dev/tutorial/introducing-sveltekit>
+  - Just the "Introduction" and "Routing" sections are enough
+- Tailwind CSS: <https://tailwindcss.com/docs/utility-first>
+  - Just the "Utility-First Fundamentals" article is enough, although it's
+    helpful to read everything under "Core Concepts"
+- DaisyUI: <https://daisyui.com/docs/use/>
+  - Just the "Use" article is enough
