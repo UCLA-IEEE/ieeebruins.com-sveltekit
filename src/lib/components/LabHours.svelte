@@ -77,7 +77,7 @@
 	<span class="loading-spinner loading-sm loading" />
 {:then labData}
 	<div class="overflow-x-auto">
-		<table class="table">
+		<table class="table w-full">
 			<!-- head -->
 			<thead>
 				<tr>
