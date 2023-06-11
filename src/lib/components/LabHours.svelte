@@ -22,6 +22,14 @@
 		'5:00 PM'
 	];
 
+	const projectColors = {
+		"OPS": "badge-neutral",
+		"MM": "badge-primary",
+		"PR": "badge-secondary",
+		"DAV": "badge-accent",
+		"WRAP": "badge-ghost"
+	}
+
 	function getClasses(officers: string, labData: any) {
 		// officers is a string of officers, separated by newlines
 		const officersList = officers.split('\n');
@@ -98,7 +106,18 @@
 							<td class="p-0">
 								<label for="my_modal_{i}_{j}">
 									<div class="h-36 p-2 hover:bg-slate-50">
-										{@html officers.split('\n').join('<br>')}
+										{#each officers.split('\n') as officer}
+											<span>{officer}</span>
+											{#if officer in labData.abilities.checkoffs}
+
+												<!-- code to show officer badges -->
+												<!-- {#each labData.abilities.checkoffs[officer] as project}
+													<div class="badge {projectColors[project]}">{project}</div>
+												{/each} -->
+											{/if}
+											<br>
+										{/each}
+										<!-- {@html officers.split('\n').join(' <div class="badge badge-secondary">OPS</div><br>')} -->
 									</div>
 								</label>
 								<!-- Put this part before </body> tag -->
