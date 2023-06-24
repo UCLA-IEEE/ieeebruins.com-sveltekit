@@ -23,12 +23,12 @@
 	];
 
 	const projectColors = {
-		"OPS": "badge-neutral",
-		"MM": "badge-primary",
-		"PR": "badge-secondary",
-		"DAV": "badge-accent",
-		"WRAP": "badge-ghost"
-	}
+		OPS: 'badge-neutral',
+		MM: 'badge-primary',
+		PR: 'badge-secondary',
+		DAV: 'badge-accent',
+		WRAP: 'badge-ghost'
+	};
 
 	function getClasses(officers: string, labData: any) {
 		// officers is a string of officers, separated by newlines
@@ -39,7 +39,7 @@
 
 		if (officersList[0] === 'Check Discord') {
 			// console.log(`Discord`);
-			return 'Check Discord';
+			return ['Check Discord'];
 		}
 
 		// for each officer, get the classes and put them together
@@ -53,7 +53,7 @@
 			}
 		});
 
-		return Array.from(classesSet).join('<br>');
+		return Array.from(classesSet);
 	}
 
 	function getCheckoffs(officers: string, labData: any) {
@@ -64,7 +64,7 @@
 
 		if (officersList[0] === 'Check Discord') {
 			// console.log(`Discord`);
-			return 'Check Discord';
+			return ['Check Discord'];
 		}
 
 		// for each officer, get checkoffs and put them together
@@ -77,7 +77,7 @@
 			}
 		});
 
-		return Array.from(checkoffsSet).join('<br>');
+		return Array.from(checkoffsSet);
 	}
 </script>
 
@@ -109,13 +109,12 @@
 										{#each officers.split('\n') as officer}
 											<span>{officer}</span>
 											{#if officer in labData.abilities.checkoffs}
-
 												<!-- code to show officer badges -->
 												<!-- {#each labData.abilities.checkoffs[officer] as project}
 													<div class="badge {projectColors[project]}">{project}</div>
 												{/each} -->
 											{/if}
-											<br>
+											<br />
 										{/each}
 										<!-- {@html officers.split('\n').join(' <div class="badge badge-secondary">OPS</div><br>')} -->
 									</div>
@@ -123,7 +122,7 @@
 								<!-- Put this part before </body> tag -->
 								<input type="checkbox" id="my_modal_{i}_{j}" class="modal-toggle" />
 								<div class="modal">
-									<div class="modal-box max-h-80 w-96 select-none">
+									<div class="modal-box max-h-96 w-96 select-none">
 										<label
 											for="my_modal_{i}_{j}"
 											class="btn-ghost btn-sm btn-circle btn absolute right-2 top-2">✕</label
@@ -135,10 +134,17 @@
 											</tr>
 											<tr>
 												<td class="w-1/2 align-top">
-													{@html getClasses(officers, labData)}
+													{#each getClasses(officers, labData) as c}
+														<!-- render each officer's classes -->
+														<p>{c}</p>
+													{/each}
+
 												</td>
 												<td class="w-1/2 align-top">
-													{@html getCheckoffs(officers, labData)}
+													{#each getCheckoffs(officers, labData) as c}
+														<!-- render each officer's project checkoffs -->
+														<p>{c}</p>
+													{/each}
 												</td>
 											</tr>
 										</table>
