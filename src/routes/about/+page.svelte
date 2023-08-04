@@ -6,52 +6,19 @@
   <title>About - IEEE at UCLA</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- JQUERY -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- BOOTSTRAP -->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"
-  ></script>
-
-  <!-- FONT AWESOME -->
-  <script
-    src="https://kit.fontawesome.com/2fb39e755e.js"
-    crossorigin="anonymous"
-  ></script>
-
-  <!--Favicon -->
-  <link rel="icon" href="/public/favicon.ico" />
-
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="/public/css/footer.css?v=1.0.0" />
-  <link rel="stylesheet" href="/public/css/navbar.css?v=1.0.1" />
-  <link rel="stylesheet" href="/public/css/style.css?v=1.0.0" />
-  <link rel="stylesheet" href="/public/css/about.css?v=1.0.0?v=1.0.0" />
-
-  <!-- SCRIPTS -->
-  <script src="/public/js/about.js"></script>
 </head>
 
 
-<!-- FRONT -->
+ <!-- FRONT -->
 
-<div class="front text-center py-[10px]">
-  <h1 class="text-white font-bold">
-    To provide hands-on engineering <br/>
-    experience to students at UCLA
+ <div class="text-center pt-[100px]">
+  <img src="/public/images/about/pp.jpg" alt="Front"/>
+  <h1 class="font-bold text-white text-[35px] tracking-wider py-[16px]">
+    To provide hands-on engineering <br />
+    <span class="underline underline-offset-[20px] decoration-[10px]"> experience to students at UCLA </span>
   </h1>
-  <div class="bg-base-100 flex text-justify text-[20px] py-[25px] px-[40px] mx-[350px]">
-    <p class="text-white font-size-12">
+  <div class="bg-base-100 py-[30px] px-[60px] mt-[20px] mx-[134.5px]">
+    <p class="text-white text-[20px] text-justify">
       Our student organization was founded by a group of students united by
       the belief that that hands-on experience is foundational in becoming a
       successful engineer. Since then, we have devoted our time and energies
@@ -66,34 +33,34 @@
 
 <!-- CONTACT INFO -->
 
-<div class="px-32">
-  <div class="row contact text-left py-16 text-[20px]">
-    <div class="contact-title col-md-3 col-sm-6 px-20 font-bold">
-      <h1 class="font-bold">
+<div class="columns-4 px-[65px] py-[50px]">
+  <div class="row contact background-light-grey text-left">
+    <div class="font-bold text-[35px] leading-none">
+      <h1>
         CONTACT <br />
-        <span class="text-primary underline underline-offset-[18px] decoration-black decoration-[10px]">INFO
-          &emsp;&emsp;&ensp;</span>
+        <span class="text-primary underline decoration-[10px] underline-offset-[12px] decoration-black">
+          INFO&emsp;&emsp;&ensp;</span>
       </h1>
     </div>
-    <div class="contact-info col-md-3 col-sm-6 px-20 py-7">
+    <div class="text-[20px]">
       <p>
         For contacts and inquiries, <br />
         please email us at: <br />
-        <a href="mailto:president@ieeebruins.com"
+        <a class="text-primary" href="mailto:president@ieeebruins.com"
           >president@ieeebruins.com</a
         >
       </p>
     </div>
-    <div class="contact-info col-md-3 col-sm-6 px-20 py-7">
+    <div class="text-[20px]">
       <p>
         For bug reports and <br />
         website suggestions: <br />
-        <a href="mailto:webmaster@ieeebruins.com"
+        <a class="text-primary" href="mailto:webmaster@ieeebruins.com"
           >webmaster@ieeebruins.com</a
         >
       </p>
     </div>
-    <div class="contact-info col-md-3 col-sm-6 px-20 py-7">
+    <div class="text-[20px]">
       <p>
         56-125B Engineering IV UCLA <br />
         420 Westwood Plaza <br />
@@ -105,13 +72,14 @@
 
 <!-- GET INVOLVED -->
 
-<div class="bg-primary py-[30px] text-center">
-  <h1 class="text-white font-bold underline underline-offset-[18px] decoration-[10px] pb-12">GET INVOLVED</h1>
+<div class="bg-primary py-[40px] text-center text-white">
+  <h1 class="font-bold text-[35px] tracking-wider py-[10px] px-[10px] underline underline-offset-[20px] decoration-[10px]">
+    Get Involved</h1>
 
-  <div class="mx-[160px]">
-    <div class="text-justify text-[20px]">
-      <h2 class="underline decoration-1 underline-offset-8 text-[25px]">IEEE WORLDWIDE ORGANIZATION</h2>
-      <p>
+  <div class="text-justify px-[120px]">
+    <div class="py-[20px]">
+      <h2 class="text-[25px] font-bold underline decoration-[1px] underline-offset-[5px]">IEEE WORLDWIDE ORGANIZATION</h2>
+      <p class="text-[20px]">
         The Institute of Electrical and Electronics Engineers (IEEE) is the
         primary professional society of the electrical engineering
         profession. It has more than 330,000 members worldwide; including
@@ -126,15 +94,14 @@
         <br />
         <br />
         To find out more, visit
-        <a href="https://www.ieee.org/" class="text-white underline decoration-white"
+        <a href="https://www.ieee.org/" target="_blank"
           >the IEEE website!</a
         >
       </p>
     </div>
-    <br />
-    <div class="involvement text-justify text-[20px]">
-      <h2 class="underline decoration-1 underline-offset-8 text-[25px]">GENERAL MEMBER</h2>
-      <p>
+    <div class="py-[20px]">
+      <h2 class="text-[25px] font-bold underline decoration-[1px] underline-offset-[5px]">General Member</h2>
+      <p class="text-[20px]">
         One of the most common questions we receive is how can one become a
         member of our club. We don't have tight restrictions on who is and
         who isn't a member. Becoming a general member of our club is as
@@ -146,10 +113,9 @@
         happy to welcome you to the club!
       </p>
     </div>
-    <br />
-    <div class="involvement text-justify text-[20px]">
-      <h2 class="underline decoration-1 underline-offset-8 text-[25px]">GENERAL BOARD</h2>
-      <p>
+    <div class="py-[20px]">
+      <h2 class="text-[25px] font-bold underline decoration-[1px] underline-offset-[5px]">General Board</h2>
+      <p class="text-[20px]">
         General Board is our annual mentorship program. Every year, members
         of our officer board choose to lead a group of 3-5 general members
         for the rest of the academic year. Each GB decides on a a set of
@@ -162,36 +128,36 @@
         personal experience with us! Applications and info sessions happen a
         couple weeks before heading off for Winter break, so keep an eye out
         for those on our
-        <a href="https://www.facebook.com/groups/uclaieee/" class="text-white underline decoration-white"
+        <a href="https://www.facebook.com/groups/uclaieee/" target="_blank"
           >Facebook page</a
         >, and in our newsletter.
         <br />
         <br />
-        Visit <a href="http://gb.ieeebruins.com/" class="text-white underline decoration-white">gb.ieeebruins.com</a>!
+        Visit <a class="underline" href="http://gb.ieeebruins.com/">gb.ieeebruins.com</a>!
         It's a page we created with some neat visuals and statistics about
         General Board.
       </p>
-      <br />
     </div>
   </div>
 </div>
 
 <!-- OUR COMPETITIONS -->
 
-<div class="text-center pb-[70px] pt-[20px]">
-  <h1 class="font-bold underline underline-offset-[18px] decoration-[10px]">
-    Our <span class="text-primary">Competitions</span>
+<div class="text-center px-[15px] py-[10px] bg-white">
+  <h1 class="font-bold text-[35px] tracking-wider underline underline-offset-[20px] decoration-[10px] my-[15px]">
+    OUR <span class="text-primary">COMPETITIONS</span>
   </h1>
 
-  <div class="comp-wrapper text-[20px] text-white">
-    <div class="flex-wrapper">
-      <div class="comp comp-micromouse micromouse text-left col-sm-6 px-4 my-0">
-        <p class="comp-header font-bold mx-[100px]">
-          ALL-AMERICA <br />
-          MICROMOUSE
+  <div class="text-[20px] text-white columns-2 px-[120px]">
+    <div>
+      <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify">
+        <img src="/public/images/about/mouse.jpeg" alt="Micromouse"/>
+        <p class="font-bold">
+          ALL-AMERICA <br/>
+          <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">MICROMOUSE</span>
         </p>
-        <div class="compdescrip bg-base-100 text-justify px-4 my-0 mx-[100px]">
-          <p>
+        <div class="flex">
+          <p class="bg-base-100 mt-[15px] px-[10px] py-[10px]">
             Our annual All-America Micromouse Competition brings schools and
             universities together over one Micromouse competition. In this
             competition, school teams have their mice put to the test as
@@ -199,33 +165,32 @@
             out-performing the rest of the competition. It's an intense,
             fun-filled, and tiring day of everything and anything
             Micromouse!
-          </p>
-          <p>
+          <br><br>
             The 2023 competition is planned for Memorial Day Weekend
             (Saturday May 27th - Sunday May 28th) at UCLA. Please email
-            <a href="mailto:micromouse@ieeebruins.com"
-              >micromouse@ieeebruins.com</a
-            >
+            <a class="underline" href="mailto:micromouse@ieeebruins.com"
+              >micromouse@ieeebruins.com</a>
             if interested in competing!
           </p>
         </div>
       </div>
-      <div class="comp comp-ideahacks ideahacks text-justify col-sm-6 px-4 my-0">
-        <p class="comp-header font-bold mx-[100px]">
-          <br />
-          IDEA HACKS
+      <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify">
+        <img src="/public/images/about/hacks.jpg" alt="Ideahacks"/>
+        <p class="text-white font-bold">
+          <br class="underline decoration-[10px] underline-offset-[12px] decoration-white"/>
+          <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">IDEA HACKS</span>
         </p>
-        <div class="compdescrip bg-base-100 text-justify px-4 my-0 mx-[100px]">
-          <p>
+        <div class="flex">
+          <p class="bg-base-100 mt-[15px] px-[10px] py-[10px]">
             Every year, we team up with Theta Tau at UCLA in order to put on
             IDEA Hacks, a hardware-focused hackathon. Hackers are invited
             onto our campus and challenged to hack with hardware that we
             provide to build something relevant to the year's theme.
             Winner's get to take home some need prizes!
-          </p>
-          <a href="http://www.ideahacks.la/" target="_blank"
-            >Take me to ideahacks.la!</a
-          >
+          <br><br>
+          <a class="underline" href="http://www.ideahacks.la/" target="_blank"
+            >Take me to ideahacks.la!</a>
+        </p>
         </div>
       </div>
     </div>
@@ -234,14 +199,14 @@
 
 <!-- SPAX-->
 
-<div class="spax bg-base-100 py-[40px]">
-  <div class="row px-[70px]">
-    <div class="col-md-5 text-left">
-      <img class="spax-pic" src="/public/images/about/spax.jpg" alt = "SPAX team in front of Moore Hall"/>
+<div class="text-justify px-[60px] px-[70px] pt-[70px] pb-[40px]">
+  <div class="grid grid-cols-12">
+    <div class="col-span-5 text-center">
+      <img class="spax-pic" src="/public/images/about/spax.jpg" alt="Spax in front of Moore"/>
     </div>
-    <div class="spax-title col-md-7">
-      <h1 class="font-bold underline underline-offset-[18px] decoration-black decoration-[10px] py-12">SPAX</h1>
-      <p class="spax-about text-[20px] text-justify">
+    <div class="col-span-7">
+      <h1 class="font-bold text-[35px] underline decoration-[10px] underline-offset-[12px] decoration-black mb-[20px]">SPAX</h1>
+      <p class="text-[20px]">
         SPAX is an annual student professional awareness event organized by
         IEEE at UCLA. It focuses on providing students with professional
         awareness, networking opportunities, and industry contact to not
@@ -258,12 +223,12 @@
 
 <!-- SOCIALS AND EVENTS -->
 
-<div class="socials container-fluid bg-primary text-left pb-[40px] pt-[70px]">
-  <div class="row px-[70px]">
-    <div class="title col-md-7">
-      <h1 class="font-bold underline underline-offset-[18px] decoration-white decoration-[10px] py-8">SOCIALS AND EVENTS</h1>
-      <p class="involve text-[20px]">WORK HARD, PLAY HARD.</p>
-      <p class="involve-about text-justify text-[20px]">
+<div class="bg-primary text-justify text-white py-[60px] pl-[90px] pr-[70px]">
+  <div class="grid grid-cols-12">
+    <div class="col-span-7">
+      <h1 class="font-bold text-[35px] underline decoration-[10px] underline-offset-[12px] decoration-white mb-[20px]">SOCIALS AND EVENTS</h1>
+      <p class="text-[20px]">Work hard. Play hard.</p>
+      <p class="text-[20px]">
         Our collaborative and friendly culture is the foundation of our
         organization. We furthur reinforce our culture by hosting quartly
         events and socials meant to bring members closer together and form
@@ -273,285 +238,285 @@
         mailing list!
       </p>
     </div>
-    <div class="image-wrapper col-md-5 text-center">
-      <img class="social-pic" src="/public/images/about/kbbq.jpg" alt = "Team"/>
+    <div class="col-span-5 text-center">
+      <img class="social-pic" src="/public/images/about/kbbq.jpg" alt="BBQ"/>
     </div>
   </div>
 </div>
 
 <!-- AWARDS -->
 
-<div class="container-fluid awards text-center text-[20px] py-[40px] text-base-0">
+<div class="text-center px-[25px] py-[50px] bg-white">
   <div>
-    <h1 class="atitle font-bold underline underline-offset-[18px] decoration-black decoration-[10px] pb-12">&ensp;AWARDS&ensp;</h1>
+    <h1 class="text-[35px] font-bold tracking-wider underline decoration-[10px] underline-offset-[12px] decoration-black mb-[10px]">
+      &nbsp;AWARDS&nbsp;</h1>
   </div>
 
-  <div class="collapse collapse-arrow">
-    <input type="checkbox" />
-    <div class="collapse-title">
-      2021
-    </div>
-    <div class="collapse-content">
-      <p>
-        IEEE Region 6 Outstanding Large Student Branch
-     </p>
-    </div>
-  </div>
-
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
-      2020 <span class="glyphicon glyphicon-chevron-down"></span>
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
+      2021 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Outstanding Large Student Branch
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
+      2020 <span class="glyphicon glyphicon-chevron-down"></span>
+    </h1>
+  </div>
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
+      IEEE Region 6 Outstanding Large Student Branch
+    </p>
+  </div>
+
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2017 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">Region 6 Exemplary Student Branch Award</p>
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">Region 6 Exemplary Student Branch Award</p>
+    <p class="text-primary text-[20px]">
       Darrel Chong Student Activities Award, IDEA Hacks
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2014 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Outstanding Large Student Group
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2013 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Student Branch Website Competition, Honorable Mention
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Outstanding Large Student Branch
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA Engineering Student Group of the Year
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       All America Micromouse Competition (held at UCLA), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA Natcar Competition (held at UCLA), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA Natcar Competition (held at UCLA), Second Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       Davis Cup Competition (held at UC Davis), Third Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       California MicroMouse (held at UCSD), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       ViaCar Competition (held at UCSD), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       ViaCar Competition (held at UCSD), Second Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Ethics Contest (held at UCLA), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Student Professional Awareness Venture (S-PAVe) (held at UCLA)
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2012 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Ethics Contest (held at UCLA), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Souther Area MicroMouse Competition (held at UCLA),
       Third Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Student Professional Awareness Venture (S-PAVe) (held at UCLA)
     </p>
-    <p class="award text-primary my-0">ESUC Student Group of the Year</p>
+    <p class="text-primary text-[20px]">ESUC Student Group of the Year</p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2011 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Ethics Contest (held at UCLA), First Place
     </p>
-    <p class="award text-primary my-0">IEEE Exemplary Student Branch Award</p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">IEEE Exemplary Student Branch Award</p>
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Southern Area MicroMouse Competition (held at CSULB),
       First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       California MicroMouse Competition (held at UC San Diego), Third Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Student Professional Awareness Venture (S-PAVe) (held at UCLA)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Exemplary Student Branch Award
     </p>
-    <p class="award text-primary my-0">ESUC Student Group of the Year</p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">ESUC Student Group of the Year</p>
+    <p class="text-primary text-[20px]">
       UCLA HSSEAS Senior Dinner, Outstanding Student Group
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2010 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Southern Area, Outstanding Student Branch, Runner-up
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Southern Area MicroMouse Competition (held at CSUN),
       First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Southern California University MicroMouse Competition (held at
       UCLA), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Ethics Contest (held at UCLA), Second Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       Southern California ViaCar Competition (held at UCSD), First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA HSSEAS Senior Dinner, Most Improved Student Group of the Year
       Award
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA hosted the IEEE Region 6 Southern Area Meeting, and the Student
       Leadership Workshop (CSULA, CSULB, Cal Poly Pomona, Cal Poly SLO,
       CSUN, UCR, UCLA attended)
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2009 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE-USA Student Professional Awareness Conference (S-PAC)
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2006 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Larry K. Wilson Regional Student Activities Award
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Southern Area, Outstanding Student Branch, Runner-up
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2004 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       UCLA IEEE 40th Anniversary Banquet at Marriott Marina del Rey
       (approximately 200 attendees)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE-USA Student Professional Awareness Conference (S-PAC)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6, Student Branch Website Contest, Runner-up
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6 Southern Area, Outstanding Student Branch
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6, Outstanding Student Paper Contest, Second Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Outstanding Branch Counselor and Advisor Award (Dr. Ken Yang)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA IEEE Forum (distinguished speaker series)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA Engineering Society, Engineers Week Outstanding Participation
       Award
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA hosted the IEEE Region 6 Spring Meeting (approximately 100
       attendees), the Student Paper Contest, and the MicroMouse Competition
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2003 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       IEEE Region 6, Student Branch Website Contest, Second Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       IEEE Region 6, Outstanding Student Paper Contest, First Place
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA IEEE Forum (distinguished speaker series)
     </p>
-    <p class="award text-primary my-0">
+    <p class="text-primary text-[20px]">
       UCLA Engineering Society, Engineers Week Outstanding Participation
       Award
     </p>
   </div>
 
-  <div class="year bg-primary text-left mx-80 py-4 mt-8 px-10">
-    <h1 class="pull-down font-bold my-0">
+  <div class="bg-primary text-left mt-[20px] px-[20px] py-[10px] mx-[69.5px]">
+    <h1 class="text-white font-bold tracking-wider text-[35px]">
       2002 <span class="glyphicon glyphicon-chevron-down"></span>
     </h1>
   </div>
-  <div class="award-list bg-base-100 text-left mx-80 px-10 py-7">
-    <p class="award text-primary my-0">
+  <div class="bg-base-100 text-left px-[20px] py-[20px] mx-[69.5px]">
+    <p class="text-primary text-[20px]">
       UCLA IEEE Forum (distinguished speaker series)
     </p>
   </div>
 
-  <p class="text-primary show-more">show more</p>
+  <p class="ieee-blue show-more">show more</p>
 </div>
