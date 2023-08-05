@@ -11,13 +11,12 @@
 
  <!-- FRONT -->
 
- <div class="text-center pt-[100px]">
-  <img src="/public/images/about/pp.jpg" alt="Front"/>
+ <div class="text-center pt-[100px] pb-[60px] bg-cover bg-fixed bg-[url('/src/lib/images/pp.jpg')]">
   <h1 class="font-bold text-white text-[35px] tracking-wider py-[16px]">
     To provide hands-on engineering <br />
     <span class="underline underline-offset-[20px] decoration-[10px]"> experience to students at UCLA </span>
   </h1>
-  <div class="bg-base-100 py-[30px] px-[60px] mt-[20px] mx-[134.5px]">
+  <div class="bg-neutral/50 py-[30px] px-[60px] mt-[20px] mx-[350px]">
     <p class="text-white text-[20px] text-justify">
       Our student organization was founded by a group of students united by
       the belief that that hands-on experience is foundational in becoming a
@@ -77,7 +76,7 @@
     Get Involved</h1>
 
   <div class="text-justify px-[120px]">
-    <div class="py-[20px]">
+    <div class="py-[30px]">
       <h2 class="text-[25px] font-bold underline decoration-[1px] underline-offset-[5px]">IEEE WORLDWIDE ORGANIZATION</h2>
       <p class="text-[20px]">
         The Institute of Electrical and Electronics Engineers (IEEE) is the
@@ -144,54 +143,50 @@
 <!-- OUR COMPETITIONS -->
 
 <div class="text-center px-[15px] py-[10px] bg-white">
-  <h1 class="font-bold text-[35px] tracking-wider underline underline-offset-[20px] decoration-[10px] my-[15px]">
+  <h1 class="font-bold text-[35px] tracking-wider underline underline-offset-[20px] decoration-[10px] my-[40px]">
     OUR <span class="text-primary">COMPETITIONS</span>
   </h1>
 
-  <div class="text-[20px] text-white columns-2 px-[120px]">
-    <div>
-      <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify">
-        <img src="/public/images/about/mouse.jpeg" alt="Micromouse"/>
-        <p class="font-bold">
-          ALL-AMERICA <br/>
-          <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">MICROMOUSE</span>
+  <div class="text-[20px] text-white grid grid-cols-2 px-[120px] pb-[40px]">
+    <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify bg-[length:700px_580px] bg-[url('/src/lib/images/mouse.jpeg')]">
+      <p class="font-bold">
+        ALL-AMERICA <br/>
+        <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">MICROMOUSE</span>
+      </p>
+      <div>
+        <p class="bg-neutral/50 mt-[30px] px-[10px] py-[10px]">
+          Our annual All-America Micromouse Competition brings schools and
+          universities together over one Micromouse competition. In this
+          competition, school teams have their mice put to the test as
+          they run through multiple maze challenges, in hopes of
+          out-performing the rest of the competition. It's an intense,
+          fun-filled, and tiring day of everything and anything
+          Micromouse!
+        <br><br>
+          The 2023 competition is planned for Memorial Day Weekend
+          (Saturday May 27th - Sunday May 28th) at UCLA. Please email
+          <a class="underline" href="mailto:micromouse@ieeebruins.com"
+            >micromouse@ieeebruins.com</a>
+          if interested in competing!
         </p>
-        <div class="flex">
-          <p class="bg-base-100 mt-[15px] px-[10px] py-[10px]">
-            Our annual All-America Micromouse Competition brings schools and
-            universities together over one Micromouse competition. In this
-            competition, school teams have their mice put to the test as
-            they run through multiple maze challenges, in hopes of
-            out-performing the rest of the competition. It's an intense,
-            fun-filled, and tiring day of everything and anything
-            Micromouse!
-          <br><br>
-            The 2023 competition is planned for Memorial Day Weekend
-            (Saturday May 27th - Sunday May 28th) at UCLA. Please email
-            <a class="underline" href="mailto:micromouse@ieeebruins.com"
-              >micromouse@ieeebruins.com</a>
-            if interested in competing!
-          </p>
-        </div>
       </div>
-      <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify">
-        <img src="/public/images/about/hacks.jpg" alt="Ideahacks"/>
-        <p class="text-white font-bold">
-          <br class="underline decoration-[10px] underline-offset-[12px] decoration-white"/>
-          <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">IDEA HACKS</span>
-        </p>
-        <div class="flex">
-          <p class="bg-base-100 mt-[15px] px-[10px] py-[10px]">
-            Every year, we team up with Theta Tau at UCLA in order to put on
-            IDEA Hacks, a hardware-focused hackathon. Hackers are invited
-            onto our campus and challenged to hack with hardware that we
-            provide to build something relevant to the year's theme.
-            Winner's get to take home some need prizes!
-          <br><br>
-          <a class="underline" href="http://www.ideahacks.la/" target="_blank"
-            >Take me to ideahacks.la!</a>
-        </p>
-        </div>
+    </div>
+    <div class="px-[25px] py-[25px] mx-[10px] mb-[40px] text-justify bg-[length:750px_600px] bg-[url('/src/lib/images/hacks.jpg')]" >
+      <p class="text-white font-bold">
+        <br class="underline decoration-[10px] underline-offset-[12px] decoration-white"/>
+        <span class="underline decoration-[10px] underline-offset-[12px] decoration-white">IDEA HACKS</span>
+      </p>
+      <div>
+        <p class="bg-neutral/50 mt-[15px] px-[10px] py-[10px]">
+          Every year, we team up with Theta Tau at UCLA in order to put on
+          IDEA Hacks, a hardware-focused hackathon. Hackers are invited
+          onto our campus and challenged to hack with hardware that we
+          provide to build something relevant to the year's theme.
+          Winner's get to take home some need prizes!
+        <br><br>
+        <a class="underline" href="http://www.ideahacks.la/" target="_blank"
+          >Take me to ideahacks.la!</a>
+      </p>
       </div>
     </div>
   </div>
@@ -199,12 +194,12 @@
 
 <!-- SPAX-->
 
-<div class="text-justify px-[60px] px-[70px] pt-[70px] pb-[40px]">
+<div class="text-justify px-[70px] py-[60px]">
   <div class="grid grid-cols-12">
-    <div class="col-span-5 text-center">
-      <img class="spax-pic" src="/public/images/about/spax.jpg" alt="Spax in front of Moore"/>
+    <div class="px-[15px] col-span-5 text-center">
+      <img src="/src/lib/images/spax.jpg" alt="Spax in front of Moore"/>
     </div>
-    <div class="col-span-7">
+    <div class="px-[20px] col-span-7">
       <h1 class="font-bold text-[35px] underline decoration-[10px] underline-offset-[12px] decoration-black mb-[20px]">SPAX</h1>
       <p class="text-[20px]">
         SPAX is an annual student professional awareness event organized by
@@ -223,9 +218,9 @@
 
 <!-- SOCIALS AND EVENTS -->
 
-<div class="bg-primary text-justify text-white py-[60px] pl-[90px] pr-[70px]">
+<div class="bg-primary text-justify text-white py-[60px] px-[70px]">
   <div class="grid grid-cols-12">
-    <div class="col-span-7">
+    <div class="px-[20px] col-span-7">
       <h1 class="font-bold text-[35px] underline decoration-[10px] underline-offset-[12px] decoration-white mb-[20px]">SOCIALS AND EVENTS</h1>
       <p class="text-[20px]">Work hard. Play hard.</p>
       <p class="text-[20px]">
@@ -238,8 +233,8 @@
         mailing list!
       </p>
     </div>
-    <div class="col-span-5 text-center">
-      <img class="social-pic" src="/public/images/about/kbbq.jpg" alt="BBQ"/>
+    <div class="px-[15px] col-span-5 text-center">
+      <img class="social-pic" src="/src/lib/images/kbbq.jpg" alt="BBQ"/>
     </div>
   </div>
 </div>
@@ -248,7 +243,7 @@
 
 <div class="text-center px-[25px] py-[50px] bg-white">
   <div>
-    <h1 class="text-[35px] font-bold tracking-wider underline decoration-[10px] underline-offset-[12px] decoration-black mb-[10px]">
+    <h1 class="text-[35px] font-bold tracking-wider underline decoration-[10px] underline-offset-[12px] decoration-black pb-[10px]">
       &nbsp;AWARDS&nbsp;</h1>
   </div>
 
@@ -518,5 +513,4 @@
     </p>
   </div>
 
-  <p class="ieee-blue show-more">show more</p>
 </div>
