@@ -138,7 +138,6 @@
 														<!-- render each officer's classes -->
 														<p>{c}</p>
 													{/each}
-
 												</td>
 												<td class="w-1/2 align-top">
 													{#each getCheckoffs(officers, labData) as c}

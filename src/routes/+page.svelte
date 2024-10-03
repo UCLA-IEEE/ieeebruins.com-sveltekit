@@ -11,14 +11,12 @@
 	<div class="hero-overlay bg-opacity-50" />
 	<div class="hero-content text-center">
 		<div class="max-w-max">
-			<h1
-				class="glass m-10 flex items-center gap-8 bg-primary bg-opacity-80 p-2 text-5xl font-black text-base-100 lg:text-9xl"
-			>
+			<h1 class="m-10 flex items-center gap-8 p-2 text-6xl font-black text-base-100 lg:text-9xl">
 				<IeeeLogo color="#ffffff" className="w-28 h-28" />
 				<span> IEEE at UCLA </span>
 			</h1>
-			<h2 class="text-5xl font-bold text-base-100">
-				<span class="bg-primary"> Hands-On Engineering </span>
+			<h2 class="text-3xl font-bold text-base-100 lg:text-5xl">
+				<span class=""> Hands-On Engineering </span>
 			</h2>
 		</div>
 	</div>
@@ -66,8 +64,19 @@
 	</div>
 </div>
 
-<div class="mx-4 my-8 flex w-full max-w-screen-lg flex-col self-center">
+<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
 	<Header text="Events" />
+	We have a Google Calendar that is constantly being updated with our latest events. Click
+	<a
+		class="font-bold text-primary hover:text-black"
+		href="https://calendar.google.com/calendar/u/0?cid=ZnBlaG5tczY1NTkxYjJhYXE2ZTc1MDN2dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+		>here</a
+	>
+	to add it to your calendar!
+</div>
+
+<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+	<Header text="Lab Hours" />
 	<LabHours />
 </div>
 

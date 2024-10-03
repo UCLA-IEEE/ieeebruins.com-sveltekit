@@ -26,9 +26,6 @@
 	</button>
 	<ul class="dropdown-content gap-2 p-2 backdrop-blur-lg">
 		<li>
-			<a href="/about" role="button" class="border-text-content btn text-base-100">About</a>
-		</li>
-		<li>
 			<a href="/officers" role="button" class="btn text-base-100">Officers</a>
 		</li>
 		<li>
@@ -38,8 +35,8 @@
 </li>
 
 <style>
-	a,
+	/* a,
 	button {
-		filter: drop-shadow(0.1rem 0.1rem 0 hsl(var(--s)));
-	}
+		filter: drop-shadow(0.05rem 0.05rem 0 hsl(var(--s)));
+	} */
 </style>
