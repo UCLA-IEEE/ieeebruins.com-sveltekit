@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from 'tailwindcss/defaultTheme';
+import daisyui from 'daisyui';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -27,5 +28,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require('daisyui')]
+	plugins: [daisyui]
 };

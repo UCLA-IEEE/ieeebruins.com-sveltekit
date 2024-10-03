@@ -82,7 +82,7 @@
 </script>
 
 {#await labDataPromise}
-	<span class="loading-spinner loading-sm loading" />
+	<span class="loading loading-spinner loading-sm" />
 {:then labData}
 	<div class="overflow-x-auto">
 		<table class="table w-full">
