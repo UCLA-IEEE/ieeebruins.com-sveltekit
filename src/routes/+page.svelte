@@ -64,7 +64,7 @@
 	</div>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg">
 	<Header text="Events" />
 	We have a Google Calendar that is constantly being updated with our latest events. Click
 	<a
@@ -75,7 +75,7 @@
 	to add it to your calendar!
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>
