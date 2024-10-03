@@ -13,13 +13,15 @@ written in PHP.
 ## Developing
 
 Start a development server:
+Start a development server:
 
+````sh
 ```sh
 npm run dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
-```
+````
 
 When the terminal is open, you can press "o" to open the app in a new browser
 tab.
@@ -40,14 +42,30 @@ CDN](https://github.com/simple-icons/simple-icons#cdn-usage).
 
 Theme colors are defined in `tailwind.config.js`. Primary and secondary should
 not be changed:
+Theme colors are defined in `tailwind.config.js`. Primary and secondary should
+not be changed:
 
+````js
+"primary": "#00629B", // IEEE blue
+"secondary": "#E4C63F" // Yellow used in our social media graphics
 ```js
 "primary": "#00629B", // IEEE blue
 "secondary": "#E4C63F" // Yellow used in our social media graphics
-```
+````
 
 ## Resources
 
+## Resources
+
+- Svelte: <https://learn.svelte.dev/tutorial/welcome-to-svelte>
+  - Just the "Introduction" section is enough for our website
+- SvelteKit: <https://learn.svelte.dev/tutorial/introducing-sveltekit>
+  - Just the "Introduction" and "Routing" sections are enough
+- Tailwind CSS: <https://tailwindcss.com/docs/utility-first>
+  - Just the "Utility-First Fundamentals" article is enough, although it's
+    helpful to read everything under "Core Concepts"
+- DaisyUI: <https://daisyui.com/docs/use/>
+  - Just the "Use" article is enough
 - Svelte: <https://learn.svelte.dev/tutorial/welcome-to-svelte>
   - Just the "Introduction" section is enough for our website
 - SvelteKit: <https://learn.svelte.dev/tutorial/introducing-sveltekit>
