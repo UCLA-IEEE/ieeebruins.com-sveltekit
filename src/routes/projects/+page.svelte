@@ -5,7 +5,7 @@
 
 <div class="my-8" />
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Our Projects" />
 	<p class="mb-2">
 		Our primary method in achieving our mission is by getting our members involved in our project
@@ -17,8 +17,8 @@
 		for your own projects!
 	</p>
 </div>
-
-<div class="x-4 my-8 w-full self-center lg:max-w-screen-lg lg:px-0">
+<div class="divider" />
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Open Project Space" />
 	<div class="divider-start divider divider-primary">No Fear in Not Knowing</div>
 	<p class="mb-2">

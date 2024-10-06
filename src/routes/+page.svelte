@@ -7,7 +7,7 @@
 	import LabHours from '$lib/components/LabHours.svelte';
 </script>
 
-<div class="hero min-h-screen" style="background-image: url({ops})">
+<!-- <div class="hero min-h-screen w-screen">
 	<div class="hero-overlay bg-opacity-50" />
 	<div class="hero-content text-center">
 		<div class="max-w-max">
@@ -20,9 +20,11 @@
 			</h2>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:flex-row">
+<div />
+
+<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:mx-auto lg:flex-row">
 	<div class="lg:w-1/2">
 		<Header text="About Us" />
 		<p class="mb-2">
@@ -40,42 +42,45 @@
 	<div class="lg:divider lg:divider-horizontal" />
 	<div class="lg:w-1/2">
 		<Header text="Get Involved" />
-		<p class="mb-2 text-xl">Keep up with all our upcoming events, workshops, and socials.</p>
-		<div class="flex flex-col gap-4 self-center">
+		<p class="mb-2">Keep up with all our upcoming events, workshops, and socials.</p>
+		<div class="flex flex-wrap gap-4 self-center">
 			<CtaButton
 				href="https://discord.gg/RREtsea"
 				iconSlug="discord"
 				color="#5865F2"
-				text="Join our Discord"
+				text="Discord"
 			/>
 			<CtaButton
 				href="https://uclaieeenewsletter.substack.com/"
 				iconSlug="substack"
 				color="#FF6719"
-				text="Subscribe to our newsletter"
+				text="Newsletter"
 			/>
 			<CtaButton
 				href="https://www.instagram.com/uclaieee/"
 				iconSlug="instagram"
 				color="#E4405F"
-				text="Follow us on Instagram"
+				text="Instagram"
 			/>
 		</div>
 	</div>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Events" />
-	We have a Google Calendar that is constantly being updated with our latest events. Click
-	<a
-		class="font-bold text-primary hover:text-black"
-		href="https://calendar.google.com/calendar/u/0?cid=ZnBlaG5tczY1NTkxYjJhYXE2ZTc1MDN2dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-		>here</a
-	>
-	to add it to your calendar!
+	<p class="mb-2">
+		We have a Google Calendar that is constantly being updated with our latest events. Click
+
+		<a
+			class="font-bold text-primary hover:text-black"
+			href="https://calendar.google.com/calendar/u/0?cid=ZnBlaG5tczY1NTkxYjJhYXE2ZTc1MDN2dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+			>here</a
+		>
+		to add it to your calendar!
+	</p>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>
