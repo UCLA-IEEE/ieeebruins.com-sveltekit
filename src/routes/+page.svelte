@@ -22,7 +22,17 @@
 	</div>
 </div> -->
 
-<div />
+<div
+	class="mb-8 h-96 self-center bg-cover bg-center lg:mx-auto"
+	style="background-image: url({ops});"
+>
+	<div class="flex h-full w-full flex-col justify-center bg-black bg-opacity-50">
+		<div class="p-2 text-center text-white">
+			<h1 class="mb-3 text-6xl font-bold">Hands-on Engineering</h1>
+			<h3 class="text-3xl">UCLA's Premier Electrical Engineering Organization</h3>
+		</div>
+	</div>
+</div>
 
 <div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:mx-auto lg:flex-row">
 	<div class="lg:w-1/2">
