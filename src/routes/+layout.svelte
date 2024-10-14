@@ -8,63 +8,99 @@
 	import { Menu, ChevronDown, ChevronRight } from 'lucide-svelte';
 </script>
 
-<!-- Navbar for desktop, sidebar for mobile -->
-<div class="drawer">
-	<input id="navbar-drawer" type="checkbox" class="drawer-toggle" />
-	<div class="drawer-content flex flex-col">
-		<!-- Desktop navbar -->
-		<div class="navbar absolute z-50 mt-5 max-w-screen-lg self-center rounded px-5">
-			<!-- IEEE at UCLA icon -->
-			<div class="navbar-start">
-				<a
-					role="button"
-					href="/"
-					class="drop-shadow-base-100 btn-primary btn-md btn gap-2 text-2xl normal-case text-base-100 drop-shadow-lg"
-				>
-					<IeeeLogo color={'#ffffff'} className={'w-8 h-8'} />
-					<span> IEEE at UCLA </span>
-				</a>
-			</div>
+<!-- <div class="h-11 bg-red-400" /> -->
 
-			<!-- Desktop navigation list -->
-			<div class="dropdown-end dropdown hidden justify-end lg:flex">
-				<ul class="menu menu-horizontal gap-2 p-2">
-					<NavList dropdownIcon={ChevronDown} />
+<div class="">
+	<div class="navbar h-6 w-full bg-primary text-white">
+		<div class="navbar-start">
+			<a href="/" class="btn-ghost btn text-xl"
+				><IeeeLogo color={'#ffffff'} className={'w-5 h-5'} />IEEE at UCLA</a
+			>
+		</div>
+		<div class="navbar-end">
+			<div class="dropdown-end dropdown">
+				<div tabindex="0" role="button" class="btn-ghost btn bg-primary lg:hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h8m-8 6h16"
+						/>
+					</svg>
+				</div>
+				<ul
+					tabindex="0"
+					class="dropdown-content menu menu-sm z-[1] mt-3 w-52 rounded-box bg-primary p-2 shadow"
+				>
+					<li>
+						<a href="/projects">Projects</a>
+						<ul class="p-2">
+							<li><a href="/projects#ops">OPS</a></li>
+							<li><a href="/projects#mm">Micromouse</a></li>
+							<li><a href="/projects#pr">Pocket Racers</a></li>
+							<li><a href="/projects#dav">DAV</a></li>
+							<li><a href="/projects#wrap">WRAP</a></li>
+							<li><a href="/projects#spi">SPI</a></li>
+						</ul>
+					</li>
+					<li><a href="/workshops">Workshops</a></li>
+
+					<li><a href="/outreach">Outreach</a></li>
+					<li><a href="/lab">Lab</a></li>
+					<li><a href="/officers">Officers</a></li>
+					<li><a href="/sponsors">Sponsors</a></li>
+					<li><a href="/edi">EDI</a></li>
 				</ul>
 			</div>
+		</div>
+		<div class="navbar-center hidden lg:flex">
+			<ul class="menu menu-horizontal px-1">
+				<li>
+					<details>
+						<summary>Projects</summary>
+						<ul class="mt-4 bg-primary p-2">
+							<li><a href="/projects">Our Projects</a></li>
+							<li><a href="/projects#ops">OPS</a></li>
+							<li><a href="/projects#mm">Micromouse</a></li>
+							<li><a href="/projects#pr">Pocket Racers</a></li>
+							<li><a href="/projects#dav">DAV</a></li>
+							<li><a href="/projects#wrap">WRAP</a></li>
+							<li><a href="/projects#spi">SPI</a></li>
+						</ul>
+					</details>
+				</li>
+				<li><a href="/workshops">Workshops</a></li>
+				<li><a href="/outreach">Outreach</a></li>
+				<li><a href="/lab">Lab</a></li>
+				<li><a href="/officers">Officers</a></li>
+				<li><a href="/sponsors">Sponsors</a></li>
+				<li><a href="/edi">EDI</a></li>
+			</ul>
+		</div>
+	</div>
 
-			<!-- Menu button to toggle sidebar, only shown on mobile -->
-			<div class="navbar-end lg:hidden">
-				<label for="navbar-drawer" class="btn-primary btn-circle btn">
-					<Menu color={'#ffffff'} />
-				</label>
+	<!-- Navbar for desktop, sidebar for mobile -->
+	<slot />
+
+	<footer class="flex w-full justify-center bg-base-200">
+		<div class="m-5 flex max-w-screen-lg flex-1 items-center justify-between">
+			<span class="text-xl">© IEEE at UCLA</span>
+			<div class="text-xl">
+				<FooterButton
+					href="https://www.instagram.com/uclaieee/"
+					alt="Instagram logo"
+					iconSlug="instagram"
+				/>
+				<FooterButton href="https://github.com/UCLA-IEEE/" alt="GitHub logo" iconSlug="github" />
+				<FooterButton href="https://discord.gg/RREtsea" alt="Discord logo" iconSlug="discord" />
 			</div>
 		</div>
-
-		<!-- Page content -->
-		<slot />
-
-		<footer class="flex w-full justify-center bg-base-200">
-			<div class="m-5 flex max-w-screen-lg flex-1 items-center justify-between">
-				<span class="text-xl">© IEEE at UCLA</span>
-				<div class="text-xl">
-					<FooterButton
-						href="https://www.instagram.com/uclaieee/"
-						alt="Instagram logo"
-						iconSlug="instagram"
-					/>
-					<FooterButton href="https://github.com/UCLA-IEEE/" alt="GitHub logo" iconSlug="github" />
-					<FooterButton href="https://discord.gg/RREtsea" alt="Discord logo" iconSlug="discord" />
-				</div>
-			</div>
-		</footer>
-	</div>
-
-	<!-- Mobile sidebar -->
-	<div class="drawer-side">
-		<label for="navbar-drawer" class="drawer-overlay backdrop-blur" />
-		<ul class="menu w-1/2 gap-2 bg-base-200 p-2">
-			<NavList dropdownIcon={ChevronRight} />
-		</ul>
-	</div>
+	</footer>
 </div>

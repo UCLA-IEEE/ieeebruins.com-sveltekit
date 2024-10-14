@@ -1,9 +1,9 @@
 import { json } from '@sveltejs/kit';
 import { API_KEY } from '$env/static/private';
 
-const SPREADSHEET_ID = '1t1_Idot1QyOnKLlXEGa0BijAa6OalRwYeZ3byehvQPY';
+const SPREADSHEET_ID = '1xI1JU96y4FPuAjm5aXoc5iQoQ0If2HZ6yeUI_LBhL0E';
 const API_BASE_URL = 'https://sheets.googleapis.com/v4/spreadsheets/';
-const HOURS_SHEET = 'Spring%202023'; // Note that %20 is the URL encoding for a space (" ")
+const HOURS_SHEET = 'Fall%202024'; // Note that %20 is the URL encoding for a space (" ")
 const HOURS_OPTIONS = '/values/' + HOURS_SHEET + '!B3:G10?key=';
 const SPECIAL_TAIL = '%20-%20Special%20Hours%20(for%20Bot%20purposes)';
 const SPECIAL_SHEET = HOURS_SHEET + SPECIAL_TAIL;

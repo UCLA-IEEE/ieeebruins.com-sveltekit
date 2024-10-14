@@ -1,28 +1,35 @@
 <script lang="ts">
 	import CtaButton from './CtaButton.svelte';
+	import { fly } from 'svelte/transition';
+
+	let visible = false;
 
 	import ops from '$lib/images/ops.jpg';
+
 	import IeeeLogo from '$lib/components/IeeeLogo.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import LabHours from '$lib/components/LabHours.svelte';
+
+	setTimeout(() => (visible = true), 0);
 </script>
 
-<div class="hero min-h-screen" style="background-image: url({ops})">
-	<div class="hero-overlay bg-opacity-50" />
-	<div class="hero-content text-center">
-		<div class="max-w-max">
-			<h1 class="m-10 flex items-center gap-8 p-2 text-6xl font-black text-base-100 lg:text-9xl">
-				<IeeeLogo color="#ffffff" className="w-28 h-28" />
-				<span> IEEE at UCLA </span>
-			</h1>
-			<h2 class="text-3xl font-bold text-base-100 lg:text-5xl">
-				<span class=""> Hands-On Engineering </span>
-			</h2>
+<div
+	class="mb-8 h-96 self-center bg-cover bg-center lg:mx-auto"
+	style="background-image: url({ops});"
+>
+	<div class="flex h-full w-full flex-col justify-center bg-black bg-opacity-50">
+		<div class="p-2 text-center text-white">
+			{#if visible}
+				<div in:fly={{ duration: 500, y: '50px' }}>
+					<h1 class="mb-3 text-6xl font-bold">Hands-on Engineering</h1>
+					<h3 class="text-3xl">UCLA's Premier Electrical Engineering Organization</h3>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>
 
-<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:flex-row">
+<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:mx-auto lg:flex-row">
 	<div class="lg:w-1/2">
 		<Header text="About Us" />
 		<p class="mb-2">
@@ -40,42 +47,45 @@
 	<div class="lg:divider lg:divider-horizontal" />
 	<div class="lg:w-1/2">
 		<Header text="Get Involved" />
-		<p class="mb-2 text-xl">Keep up with all our upcoming events, workshops, and socials.</p>
-		<div class="flex flex-col gap-4 self-center">
+		<p class="mb-2">Keep up with all our upcoming events, workshops, and socials.</p>
+		<div class="flex flex-wrap gap-4 self-center">
 			<CtaButton
 				href="https://discord.gg/RREtsea"
 				iconSlug="discord"
 				color="#5865F2"
-				text="Join our Discord"
+				text="Discord"
 			/>
 			<CtaButton
 				href="https://uclaieeenewsletter.substack.com/"
 				iconSlug="substack"
 				color="#FF6719"
-				text="Subscribe to our newsletter"
+				text="Newsletter"
 			/>
 			<CtaButton
 				href="https://www.instagram.com/uclaieee/"
 				iconSlug="instagram"
 				color="#E4405F"
-				text="Follow us on Instagram"
+				text="Instagram"
 			/>
 		</div>
 	</div>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Events" />
-	We have a Google Calendar that is constantly being updated with our latest events. Click
-	<a
-		class="font-bold text-primary hover:text-black"
-		href="https://calendar.google.com/calendar/u/0?cid=ZnBlaG5tczY1NTkxYjJhYXE2ZTc1MDN2dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-		>here</a
-	>
-	to add it to your calendar!
+	<p class="mb-2">
+		We have a Google Calendar that is constantly being updated with our latest events. Click
+
+		<a
+			class="font-bold text-primary hover:text-black"
+			href="https://calendar.google.com/calendar/u/0?cid=ZnBlaG5tczY1NTkxYjJhYXE2ZTc1MDN2dWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+			>here</a
+		>
+		to add it to your calendar!
+	</p>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:max-w-screen-lg lg:px-0">
+<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>

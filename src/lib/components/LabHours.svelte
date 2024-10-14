@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Page from '../../routes/+page.svelte';
+
 	// TODO: `fetch` must be inside an async function, otherwise SvelteKit will
 	// complain:
 	//
@@ -11,18 +13,28 @@
 
 	let labDataPromise = fetchLabData();
 
+	let filterClass = 'Pick a Class';
+
 	const times = [
-		'10:00 AM',
-		'11:00 AM',
-		'12:00 PM',
-		'1:00 PM',
-		'2:00 PM',
-		'3:00 PM',
-		'4:00 PM',
-		'5:00 PM'
+		'10-11 AM',
+		'11-12 PM',
+		'12-1 PM',
+		'1-2 PM',
+		'2-3 PM',
+		'3-4 PM',
+		'4-5 PM',
+		'5-6 PM'
 	];
 
-	const projectColors = {
+	interface projectColorsInterface {
+		OPS: string;
+		MM: string;
+		PR: string;
+		DAV: string;
+		WRAP: string;
+	}
+
+	const projectColors: projectColorsInterface = {
 		OPS: 'badge-neutral',
 		MM: 'badge-primary',
 		PR: 'badge-secondary',
@@ -30,17 +42,35 @@
 		WRAP: 'badge-ghost'
 	};
 
+	function projectSortFn(a: string, b: string) {
+		const projects = ['OPS', 'MM', 'PR', 'DAV', 'WRAP'];
+
+		return projects.indexOf(a) - projects.indexOf(b);
+	}
+
+	function getAllClasses(labData: any) {
+		const officerClasses = labData.abilities.classes;
+		const classesSet = new Set();
+		// loop through each officer and get all classes
+		Object.keys(officerClasses).forEach((key) => {
+			officerClasses[key].forEach((c: string) => {
+				classesSet.add(c);
+			});
+		});
+
+		return Array.from(classesSet).sort();
+	}
+
 	function getClasses(officers: string, labData: any) {
 		// officers is a string of officers, separated by newlines
 		const officersList = officers.split('\n');
 		const officerClasses = labData.abilities.classes;
-
 		const classesSet = new Set();
 
-		if (officersList[0] === 'Check Discord') {
-			// console.log(`Discord`);
-			return ['Check Discord'];
-		}
+		// if (officersList[0] === 'Check Discord') {
+		// 	// console.log(`Discord`);
+		// 	return ['Check Discord'];
+		// }
 
 		// for each officer, get the classes and put them together
 		officersList.forEach((officer) => {
@@ -53,19 +83,19 @@
 			}
 		});
 
-		return Array.from(classesSet);
+		return Array.from(classesSet).sort();
 	}
 
 	function getCheckoffs(officers: string, labData: any) {
 		const officersList = officers.split('\n');
 		const officerCheckoffs = labData.abilities.checkoffs;
 
-		const checkoffsSet = new Set();
+		const checkoffsSet = new Set<string>();
 
-		if (officersList[0] === 'Check Discord') {
-			// console.log(`Discord`);
-			return ['Check Discord'];
-		}
+		// if (officersList[0] === 'Check Discord') {
+		// 	// console.log(`Discord`);
+		// 	return ['Check Discord'];
+		// }
 
 		// for each officer, get checkoffs and put them together
 		officersList.forEach((officer) => {
@@ -77,13 +107,22 @@
 			}
 		});
 
-		return Array.from(checkoffsSet);
+		return Array.from(checkoffsSet).sort(projectSortFn);
 	}
 </script>
 
 {#await labDataPromise}
-	<span class="loading-spinner loading-sm loading" />
+	<span class="loading loading-spinner loading-lg" />
 {:then labData}
+	<p>Click any of the cells to view checkoffs/classes or use the filter below</p>
+	<!-- <p class="mt-2">What class do you need help with?</p> -->
+	<select class="select-primary select my-2" bind:value={filterClass}>
+		<option selected disabled>Pick a Class</option>
+		<option value="">--</option>
+		{#each getAllClasses(labData) as c}
+			<option>{c}</option>
+		{/each}
+	</select>
 	<div class="overflow-x-auto">
 		<table class="table w-full">
 			<!-- head -->
@@ -105,20 +144,29 @@
 						{#each labData.hours[i] as officers, j}
 							<td class="p-0">
 								<label for="my_modal_{i}_{j}">
-									<div class="h-36 p-2 hover:bg-slate-50">
-										{#each officers.split('\n') as officer}
-											<span>{officer}</span>
-											{#if officer in labData.abilities.checkoffs}
-												<!-- code to show officer badges -->
-												<!-- {#each labData.abilities.checkoffs[officer] as project}
-													<div class="badge {projectColors[project]}">{project}</div>
-												{/each} -->
-											{/if}
-											<br />
-										{/each}
+									<div
+										class="flex h-36 flex-col justify-between p-2 hover:bg-primary hover:bg-opacity-10 {getClasses(
+											officers,
+											labData
+										).includes(filterClass) && 'bg-secondary bg-opacity-50'}"
+									>
+										<div>
+											{#each officers.split('\n') as officer}
+												<span>{officer}</span>
+												<br />
+											{/each}
+										</div>
 										<!-- {@html officers.split('\n').join(' <div class="badge badge-secondary">OPS</div><br>')} -->
+										<div>
+											{#each getCheckoffs(officers, labData) as checkoff}
+												<div class="badge-xs opacity-75 {projectColors[checkoff]}">
+													{checkoff}
+												</div>
+											{/each}
+										</div>
 									</div>
 								</label>
+
 								<!-- Put this part before </body> tag -->
 								<input type="checkbox" id="my_modal_{i}_{j}" class="modal-toggle" />
 								<div class="modal">
