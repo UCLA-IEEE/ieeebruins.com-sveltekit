@@ -15,19 +15,15 @@
 
 	let filterClass = 'Pick a Class';
 
-	let cellsToClasses = Array.from({ length: 10 }, () => Array(20).fill([]));
-
-	let highlightedCells = Array.from({ length: 10 }, () => Array(20).fill(false));
-
 	const times = [
-		'10:00 AM',
-		'11:00 AM',
-		'12:00 PM',
-		'1:00 PM',
-		'2:00 PM',
-		'3:00 PM',
-		'4:00 PM',
-		'5:00 PM'
+		'10-11 AM',
+		'11-12 PM',
+		'12-1 PM',
+		'1-2 PM',
+		'2-3 PM',
+		'3-4 PM',
+		'4-5 PM',
+		'5-6 PM'
 	];
 
 	interface projectColorsInterface {
@@ -120,7 +116,7 @@
 {:then labData}
 	<p>Click any of the cells to view checkoffs/classes or use the filter below</p>
 	<!-- <p class="mt-2">What class do you need help with?</p> -->
-	<select class="select-primary select mb-2" bind:value={filterClass}>
+	<select class="select-primary select my-2" bind:value={filterClass}>
 		<option selected disabled>Pick a Class</option>
 		<option value="">--</option>
 		{#each getAllClasses(labData) as c}

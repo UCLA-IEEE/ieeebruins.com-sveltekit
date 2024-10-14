@@ -42,14 +42,15 @@
 					<li>
 						<a href="/projects">Projects</a>
 						<ul class="p-2">
-							<li><a>OPS</a></li>
-							<li><a>Micromouse</a></li>
-							<li><a>Pocket Racers</a></li>
-							<li><a>DAV</a></li>
-							<li><a>WRAP</a></li>
+							<li><a href="/projects#ops">OPS</a></li>
+							<li><a href="/projects#mm">Micromouse</a></li>
+							<li><a href="/projects#pr">Pocket Racers</a></li>
+							<li><a href="/projects#dav">DAV</a></li>
+							<li><a href="/projects#wrap">WRAP</a></li>
+							<li><a href="/projects#spi">SPI</a></li>
 						</ul>
 					</li>
-					<li><a>Workshops</a></li>
+					<li><a href="/workshops">Workshops</a></li>
 
 					<li><a>Outreach</a></li>
 					<li><a>Lab</a></li>
@@ -61,17 +62,26 @@
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<ul class="menu menu-horizontal px-1">
-				<li><a>Item 1</a></li>
 				<li>
 					<details>
-						<summary>Parent</summary>
+						<summary>Projects</summary>
 						<ul class="mt-4 bg-primary p-2">
-							<li><a>Submenu 1</a></li>
-							<li><a>Submenu 2</a></li>
+							<li><a href="/projects">Our Projects</a></li>
+							<li><a href="/projects#ops">OPS</a></li>
+							<li><a href="/projects#mm">Micromouse</a></li>
+							<li><a href="/projects#pr">Pocket Racers</a></li>
+							<li><a href="/projects#dav">DAV</a></li>
+							<li><a href="/projects#wrap">WRAP</a></li>
+							<li><a href="/projects#spi">SPI</a></li>
 						</ul>
 					</details>
 				</li>
-				<li><a>Item 3</a></li>
+				<li><a href="/workshops">Workshops</a></li>
+				<li><a>Outreach</a></li>
+				<li><a>Lab</a></li>
+				<li><a>Officers</a></li>
+				<li><a>Sponsors</a></li>
+				<li><a>EDI</a></li>
 			</ul>
 		</div>
 	</div>

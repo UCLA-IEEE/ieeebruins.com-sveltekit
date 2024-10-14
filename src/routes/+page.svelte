@@ -1,10 +1,16 @@
 <script lang="ts">
 	import CtaButton from './CtaButton.svelte';
+	import { fly } from 'svelte/transition';
+
+	let visible = false;
 
 	import ops from '$lib/images/ops.jpg';
+
 	import IeeeLogo from '$lib/components/IeeeLogo.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import LabHours from '$lib/components/LabHours.svelte';
+
+	setTimeout(() => (visible = true), 0);
 </script>
 
 <!-- <div class="hero min-h-screen w-screen">
@@ -28,8 +34,12 @@
 >
 	<div class="flex h-full w-full flex-col justify-center bg-black bg-opacity-50">
 		<div class="p-2 text-center text-white">
-			<h1 class="mb-3 text-6xl font-bold">Hands-on Engineering</h1>
-			<h3 class="text-3xl">UCLA's Premier Electrical Engineering Organization</h3>
+			{#if visible}
+				<div in:fly={{ duration: 500, y: '50px' }}>
+					<h1 class="mb-3 text-6xl font-bold">Hands-on Engineering</h1>
+					<h3 class="text-3xl">UCLA's Premier Electrical Engineering Organization</h3>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>
@@ -76,7 +86,7 @@
 	</div>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
+<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Events" />
 	<p class="mb-2">
 		We have a Google Calendar that is constantly being updated with our latest events. Click
@@ -90,7 +100,7 @@
 	</p>
 </div>
 
-<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
+<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>
