@@ -52,11 +52,11 @@
 					</li>
 					<li><a href="/workshops">Workshops</a></li>
 
-					<li><a>Outreach</a></li>
-					<li><a>Lab</a></li>
-					<li><a>Officers</a></li>
-					<li><a>Sponsors</a></li>
-					<li><a>EDI</a></li>
+					<li><a href="/outreach">Outreach</a></li>
+					<li><a href="/lab">Lab</a></li>
+					<li><a href="/officers">Officers</a></li>
+					<li><a href="/sponsors">Sponsors</a></li>
+					<li><a href="/edi">EDI</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,11 +77,11 @@
 					</details>
 				</li>
 				<li><a href="/workshops">Workshops</a></li>
-				<li><a>Outreach</a></li>
-				<li><a>Lab</a></li>
-				<li><a>Officers</a></li>
-				<li><a>Sponsors</a></li>
-				<li><a>EDI</a></li>
+				<li><a href="/outreach">Outreach</a></li>
+				<li><a href="/lab">Lab</a></li>
+				<li><a href="/officers">Officers</a></li>
+				<li><a href="/sponsors">Sponsors</a></li>
+				<li><a href="/edi">EDI</a></li>
 			</ul>
 		</div>
 	</div>

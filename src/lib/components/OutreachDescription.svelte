@@ -1,12 +1,11 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
-
 	export let data;
 </script>
 
-<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg" id={data.project_id}>
-	<Header text={data.project_name} />
-	<div class="divider divider-secondary max-w-sm">{data.slogan}</div>
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg" id={data.nav_id}>
+	<Header text={data.title} />
+
 	<p class="mb-2">
 		{data.description}
 	</p>
@@ -19,7 +18,7 @@
 	<div class="carousel mt-4 w-full rounded-box">
 		{#each data.images as img}
 			<div class="carousel-item w-1/2">
-				<img src={img} alt="project" class="object-cover" />
+				<img src={img} alt="outreach" class="object-cover" />
 			</div>
 		{/each}
 	</div>

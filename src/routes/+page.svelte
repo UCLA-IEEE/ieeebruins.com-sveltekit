@@ -13,21 +13,6 @@
 	setTimeout(() => (visible = true), 0);
 </script>
 
-<!-- <div class="hero min-h-screen w-screen">
-	<div class="hero-overlay bg-opacity-50" />
-	<div class="hero-content text-center">
-		<div class="max-w-max">
-			<h1 class="m-10 flex items-center gap-8 p-2 text-6xl font-black text-base-100 lg:text-9xl">
-				<IeeeLogo color="#ffffff" className="w-28 h-28" />
-				<span> IEEE at UCLA </span>
-			</h1>
-			<h2 class="text-3xl font-bold text-base-100 lg:text-5xl">
-				<span class=""> Hands-On Engineering </span>
-			</h2>
-		</div>
-	</div>
-</div> -->
-
 <div
 	class="mb-8 h-96 self-center bg-cover bg-center lg:mx-auto"
 	style="background-image: url({ops});"
