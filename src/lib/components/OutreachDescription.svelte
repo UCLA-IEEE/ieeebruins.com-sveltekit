@@ -15,7 +15,7 @@
 	{/if}
 	<br />
 
-	<div class="carousel mt-4 w-full rounded-box">
+	<div class="carousel mt-4 max-w-3xl rounded-box">
 		{#each data.images as img}
 			<div class="carousel-item w-1/2">
 				<img src={img} alt="outreach" class="object-cover" />
