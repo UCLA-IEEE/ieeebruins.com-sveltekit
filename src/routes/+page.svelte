@@ -29,7 +29,7 @@
 	</div>
 </div>
 
-<div class="mx-4 my-8 flex max-w-screen-lg flex-col self-center lg:mx-auto lg:flex-row">
+<div class="mx-4 my-8 flex max-w-screen-lg flex-col self-center px-4 lg:mx-auto lg:flex-row">
 	<div class="lg:w-1/2">
 		<Header text="About Us" />
 		<p class="mb-2">
