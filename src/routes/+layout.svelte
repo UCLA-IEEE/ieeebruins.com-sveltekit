@@ -13,13 +13,13 @@
 <div class="">
 	<div class="navbar h-6 w-full bg-primary text-white">
 		<div class="navbar-start">
-			<a href="/" class="btn-ghost btn text-xl"
+			<a href="/" class="btn btn-ghost text-xl"
 				><IeeeLogo color={'#ffffff'} className={'w-5 h-5'} />IEEE at UCLA</a
 			>
 		</div>
 		<div class="navbar-end">
-			<div class="dropdown-end dropdown">
-				<div tabindex="0" role="button" class="btn-ghost btn bg-primary lg:hidden">
+			<div class="dropdown dropdown-end">
+				<div tabindex="0" role="button" class="btn btn-ghost bg-primary lg:hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="h-5 w-5"
@@ -37,7 +37,7 @@
 				</div>
 				<ul
 					tabindex="0"
-					class="dropdown-content menu menu-sm z-[1] mt-3 w-52 rounded-box bg-primary p-2 shadow"
+					class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-primary p-2 shadow"
 				>
 					<li>
 						<a href="/projects">Projects</a>

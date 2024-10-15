@@ -29,7 +29,7 @@
 	</div>
 </div>
 
-<div class="mx-4 my-8 flex max-w-screen-lg flex-col gap-4 self-center lg:mx-auto lg:flex-row">
+<div class="mx-4 my-8 flex max-w-screen-lg flex-col self-center lg:mx-auto lg:flex-row">
 	<div class="lg:w-1/2">
 		<Header text="About Us" />
 		<p class="mb-2">
@@ -71,7 +71,7 @@
 	</div>
 </div>
 
-<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Events" />
 	<p class="mb-2">
 		We have a Google Calendar that is constantly being updated with our latest events. Click
@@ -85,7 +85,7 @@
 	</p>
 </div>
 
-<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>

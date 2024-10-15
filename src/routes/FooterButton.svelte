@@ -4,7 +4,7 @@
 	export let iconSlug: string;
 </script>
 
-<a role="button" {href} class="group btn-outline btn-circle btn">
+<a role="button" {href} class="group btn btn-circle btn-outline">
 	<img
 		{alt}
 		height="32"

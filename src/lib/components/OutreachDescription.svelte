@@ -11,7 +11,7 @@
 	</p>
 
 	{#if data.website}
-		<a class="btn-primary btn-sm btn" href={data.website} target="_blank">Website</a>
+		<a class="btn btn-primary btn-sm" href={data.website} target="_blank">Website</a>
 	{/if}
 	<br />
 

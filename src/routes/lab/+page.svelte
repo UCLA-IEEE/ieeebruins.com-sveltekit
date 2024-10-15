@@ -27,7 +27,7 @@
 	<img src={lab_map} alt="lab map" class="w-full max-w-xl" />
 </div>
 
-<div class="mx-4 my-8 w-full self-center lg:mx-auto lg:max-w-screen-lg">
+<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
 </div>

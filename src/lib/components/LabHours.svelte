@@ -116,7 +116,7 @@
 {:then labData}
 	<p>Click any of the cells to view checkoffs/classes or use the filter below</p>
 	<!-- <p class="mt-2">What class do you need help with?</p> -->
-	<select class="select-primary select my-2" bind:value={filterClass}>
+	<select class="select select-primary my-2" bind:value={filterClass}>
 		<option selected disabled>Pick a Class</option>
 		<option value="">--</option>
 		{#each getAllClasses(labData) as c}
@@ -128,7 +128,7 @@
 			<!-- head -->
 			<thead>
 				<tr>
-					<th>PST</th>
+					<th>TIME</th>
 					<th>MONDAY</th>
 					<th>TUESDAY</th>
 					<th>WEDNESDAY</th>
@@ -173,7 +173,7 @@
 									<div class="modal-box max-h-96 w-96 select-none">
 										<label
 											for="my_modal_{i}_{j}"
-											class="btn-ghost btn-sm btn-circle btn absolute right-2 top-2">✕</label
+											class="btn btn-circle btn-ghost btn-sm absolute right-2 top-2">✕</label
 										>
 										<table class="w-full">
 											<tr>

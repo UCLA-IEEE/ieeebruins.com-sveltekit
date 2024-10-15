@@ -14,7 +14,7 @@ Call to action button
 <a
 	role="button"
 	{href}
-	class={`btn-primary btn border-[${color}] bg-[${color}] max-w-fit gap-2`}
+	class={`btn btn-primary border-[${color}] bg-[${color}] max-w-fit gap-2`}
 	target="_blank"
 	rel="noopener noreferrer"
 >
