@@ -62,7 +62,7 @@
 			{
 				name: 'Jace Fang',
 				img_src: jace,
-				position: 'EVP'
+				position: 'Treasurer'
 			}
 		]
 	};
@@ -83,7 +83,7 @@
 			{
 				name: 'Heidi Hu',
 				img_src: heidi,
-				position: 'EVP'
+				position: 'Publicity'
 			},
 			{
 				name: 'Emily Lu',
