@@ -13,6 +13,7 @@
 	const sponsors = [
 		{
 			tier: 'Silver',
+			tierColor: 'gray-400',
 			company_info: [
 				{
 					name: 'Intel',
@@ -23,6 +24,7 @@
 		},
 		{
 			tier: 'Bronze',
+			tierColor: '[#CD7F32]',
 			company_info: [
 				{ name: 'Southern California Edison', img: sce_logo, url: 'https://www.sce.com/' },
 				{
