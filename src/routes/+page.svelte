@@ -9,6 +9,7 @@
 	import IeeeLogo from '$lib/components/IeeeLogo.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import LabHours from '$lib/components/LabHours.svelte';
+	import SponsorSection from '$lib/components/sponsors/SponsorSection.svelte';
 
 	setTimeout(() => (visible = true), 0);
 </script>
@@ -88,6 +89,8 @@
 <div class="my-8 w-full self-center max-lg:px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Lab Hours" />
 	<LabHours />
+	<br />
+	<SponsorSection />
 </div>
 
 <style>
