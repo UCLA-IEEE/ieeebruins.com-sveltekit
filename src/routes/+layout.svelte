@@ -37,18 +37,10 @@
 				</div>
 				<ul
 					tabindex="0"
-					class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-primary p-2 shadow"
+					class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-primary p-2 font-semibold uppercase tracking-wider shadow"
 				>
 					<li>
 						<a href="/projects">Projects</a>
-						<ul class="p-2">
-							<li><a href="/projects#ops">OPS</a></li>
-							<li><a href="/projects#mm">Micromouse</a></li>
-							<li><a href="/projects#pr">Pocket Racers</a></li>
-							<li><a href="/projects#dav">DAV</a></li>
-							<li><a href="/projects#wrap">WRAP</a></li>
-							<li><a href="/projects#spi">SPI</a></li>
-						</ul>
 					</li>
 					<li><a href="/workshops">Workshops</a></li>
 
@@ -61,21 +53,8 @@
 			</div>
 		</div>
 		<div class="navbar-center hidden lg:flex">
-			<ul class="menu menu-horizontal px-1">
-				<li>
-					<details>
-						<summary>Projects</summary>
-						<ul class="mt-4 bg-primary p-2">
-							<li><a href="/projects">Our Projects</a></li>
-							<li><a href="/projects#ops">OPS</a></li>
-							<li><a href="/projects#mm">Micromouse</a></li>
-							<li><a href="/projects#pr">Pocket Racers</a></li>
-							<li><a href="/projects#dav">DAV</a></li>
-							<li><a href="/projects#wrap">WRAP</a></li>
-							<li><a href="/projects#spi">SPI</a></li>
-						</ul>
-					</details>
-				</li>
+			<ul class="menu menu-horizontal px-1 font-semibold uppercase">
+				<li><a href="/projects">Projects</a></li>
 				<li><a href="/workshops">Workshops</a></li>
 				<li><a href="/outreach">Outreach</a></li>
 				<li><a href="/lab">Lab</a></li>
