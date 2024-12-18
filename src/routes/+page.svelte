@@ -21,7 +21,7 @@
 	<div class="flex h-full w-full flex-col justify-center bg-black bg-opacity-50">
 		<div class="p-2 text-center text-white">
 			{#if visible}
-				<div in:fly={{ duration: 500, y: '50px' }}>
+				<div in:fly|global={{ duration: 500, y: '50px' }}>
 					<h1 class="mb-3 text-6xl font-bold">Hands-on Engineering</h1>
 					<h3 class="text-3xl">UCLA's Premier Electrical Engineering Organization</h3>
 				</div>
