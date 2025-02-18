@@ -49,7 +49,9 @@
 			{
 				name: 'Rachel Yen',
 				img_src: rachel,
-				position: 'IVP'
+				position: 'IVP',
+				description:
+					"hi! I'm third year EE major with a strong passion for eating. I'm currently in the field of circuits, but I'm also interested in computer architecture! DM me if you ever want to hang out and get a sweet treat or just yap :)"
 			},
 			{
 				name: 'Eugenia Cho',
@@ -89,7 +91,8 @@
 			{
 				name: 'Heidi Hu',
 				img_src: heidi,
-				position: 'Publicity'
+				position: 'Publicity',
+				description: 'hi -d'
 			},
 			{
 				name: 'Emily Lu',
@@ -153,7 +156,9 @@
 			{
 				name: 'Holden Grissett',
 				img_src: holden,
-				position: 'Pocket Racers Lead'
+				position: 'Pocket Racers Lead',
+				description:
+					"Hey friends - I'm Holden and I'm a final year transfer CS major. I also love Physics ❤️ and cats. Ask me about my chameleon."
 			},
 			{
 				name: 'Jerard Agravante',
@@ -164,7 +169,8 @@
 			{
 				name: 'Adrian Rozario',
 				img_src: adrian,
-				position: 'DAV Lead'
+				position: 'DAV Lead',
+				description: 'The results were astounding! Absolutely nothing happened.'
 			},
 			{
 				name: 'Bryan Liu',
@@ -208,7 +214,7 @@
 				name: 'Sanjit Sarda',
 				img_src: sanjit,
 				position: 'Research and Development',
-				description: 'I like Cheese'
+				description: 'I like C̴̙̹͐̐̓̈͛͜ḧ̵̠̦́͌̽͒͗̕ę̸̤̖͎̗̜̘̯͇̱̮͔̌̾͌̈͌̈́͊̕e̷̢̖͇̲̥̤̺̜̞̼̤̓̏̍̄͌̉̚͘͘͠s̸͎̖̭̼̠̗̬̻̣̼̯͕̈́̂̽̈́̂̆͂̓͂͘̚͘͜͝͠ę̸̢̟̞͓͍͕̺̜͖͖͖͇̿̌̃̆͗͊͛͑̈́̏́̃̕͜͠ '
 			}
 		]
 	};

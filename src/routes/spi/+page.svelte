@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import HackadayCard from '$lib/components/HackadayCard.svelte';
 </script>
 
@@ -8,4 +8,4 @@
 	<HackadayCard />
 	<HackadayCard />
 	<HackadayCard />
-</div>
+</div> -->
