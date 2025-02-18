@@ -5,9 +5,7 @@
 <div class=" h-full rounded-2xl bg-primary">
 	<div class="absolute w-56 p-4 drop-shadow-md">
 		<p class=" text-white">
-			"{officerInfo.description
-				? officerInfo.description
-				: 'I am very cool with a lot of friends.'}"
+			{officerInfo.description ? officerInfo.description : ''}
 		</p>
 	</div>
 	<div role="tooltip" class="card w-56 bg-primary shadow-xl hover:opacity-30 hover:blur-sm">
