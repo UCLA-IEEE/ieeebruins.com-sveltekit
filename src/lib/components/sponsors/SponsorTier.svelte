@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="my-4 mr-4 flex flex-wrap gap-4 bg-{data.tierColor} glass relative rounded-md bg-opacity-30 p-8"
+	class="my-4 mr-4 flex flex-wrap gap-4 bg-{data.tierColor} glass relative rounded-md bg-opacity-30 p-8 dark:bg-opacity-100"
 >
 	<div
 		class="absolute left-0 top-0 p-2 uppercase text-white bg-{data.tierColor} glass rounded-md font-bold tracking-widest"

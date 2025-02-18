@@ -42,12 +42,16 @@
 			{
 				name: 'Theo Zhang',
 				img_src: theo,
-				position: 'President'
+				position: 'President',
+				description:
+					'Hello! I am a 4th year CS student. My main academic passions are ethical AI and applications of AI with a humanistic perspective. I love to read, write, cook, eat, and try new things. Feel free to reach out if you have any questions!'
 			},
 			{
 				name: 'Rachel Yen',
 				img_src: rachel,
-				position: 'IVP'
+				position: 'IVP',
+				description:
+					"hi! I'm third year EE major with a strong passion for eating. I'm currently in the field of circuits, but I'm also interested in computer architecture! DM me if you ever want to hang out and get a sweet treat or just yap :)"
 			},
 			{
 				name: 'Eugenia Cho',
@@ -57,7 +61,9 @@
 			{
 				name: 'Evan Bird',
 				img_src: evan,
-				position: 'EVP'
+				position: 'EVP',
+				description:
+					"Hey y'all! Im a fourth year EE major who likes getting outdoors, music (both listening and performance), and eating at new food/coffee spots. Holler at me if you want to chat :)"
 			},
 			{
 				name: 'Jace Fang',
@@ -78,12 +84,15 @@
 			{
 				name: 'Emily Kuczynski',
 				img_src: emilyk,
-				position: 'Secretary'
+				position: 'Secretary',
+				description:
+					"Hi everyone! I'm a fourth year computer engineering major and am minoring in Asian Languages (Korean). Outside of class I love writing poetry, learning languages/linguistics, drinking coffee, and eating really spicy food. Feel free to say hi if you see me around! :)"
 			},
 			{
 				name: 'Heidi Hu',
 				img_src: heidi,
-				position: 'Publicity'
+				position: 'Publicity',
+				description: 'hi -d'
 			},
 			{
 				name: 'Emily Lu',
@@ -98,7 +107,8 @@
 			{
 				name: 'Ethan Lai',
 				img_src: ethan,
-				position: 'Outreach Coordinator'
+				position: 'Outreach Coordinator',
+				description: 'w0w'
 			},
 			{
 				name: 'Joshua Burpee',
@@ -108,7 +118,8 @@
 			{
 				name: 'Kevin Zhang',
 				img_src: kevin,
-				position: 'Webmaster'
+				position: 'Webmaster',
+				description: "To know what you know and to know what you don't know is to know. "
 			}
 		]
 	};
@@ -119,52 +130,65 @@
 			{
 				name: 'Noosha Rahimi',
 				img_src: noosha,
-				position: 'OPS Lead'
+				position: 'OPS Lead',
+				description:
+					"Hi! I'm a second year computer engineering student.I love trying new coffee shops, going to the beach, and yoga! If you ever see me on campus, please say hi! "
 			},
 			{
 				name: 'Wyatt Grover',
 				img_src: wyatt,
-				position: 'OPS Lead'
+				position: 'OPS Lead',
+				description:
+					"Hi! I'm a 2nd year computer engineering student who loves movies, music, and cartoons, I'm always down to yap about anything and everything!"
 			},
 			{
 				name: 'Nathan Chen',
 				img_src: nathan,
-				position: 'Micromouse Lead'
+				position: 'Micromouse Lead',
+				description: 'Hello!'
 			},
 			{
 				name: 'Michael Ward',
 				img_src: michael,
-				position: 'Micromouse Lead'
+				position: 'Micromouse Lead',
+				description: 'trolled'
 			},
 			{
 				name: 'Holden Grissett',
 				img_src: holden,
-				position: 'Pocket Racers Lead'
+				position: 'Pocket Racers Lead',
+				description:
+					"Hey friends - I'm Holden and I'm a final year transfer CS major. I also love Physics ❤️ and cats. Ask me about my chameleon."
 			},
 			{
 				name: 'Jerard Agravante',
 				img_src: jerard,
-				position: 'Pocket Racers Lead'
+				position: 'Pocket Racers Lead',
+				description: 'I love Victor'
 			},
 			{
 				name: 'Adrian Rozario',
 				img_src: adrian,
-				position: 'DAV Lead'
+				position: 'DAV Lead',
+				description: 'The results were astounding! Absolutely nothing happened.'
 			},
 			{
 				name: 'Bryan Liu',
 				img_src: bryan,
-				position: 'DAV Lead'
+				position: 'DAV Lead',
+				description: 'DAV on the haters'
 			},
 			{
 				name: 'Nat Nguyendinh',
 				img_src: nat,
-				position: 'WRAP Lead'
+				position: 'WRAP Lead',
+				description: 'bet'
 			},
 			{
 				name: 'Victor Zhang',
 				img_src: victor,
-				position: 'WRAP Lead'
+				position: 'WRAP Lead',
+				description: 'I love Jerard'
 			},
 			{
 				name: 'Jessie Chan',
@@ -187,9 +211,10 @@
 				position: 'Projects and Lab Manager'
 			},
 			{
-				name: 'Sanjit',
+				name: 'Sanjit Sarda',
 				img_src: sanjit,
-				position: 'Research and Development'
+				position: 'Research and Development',
+				description: 'I like C̴̙̹͐̐̓̈͛͜ḧ̵̠̦́͌̽͒͗̕ę̸̤̖͎̗̜̘̯͇̱̮͔̌̾͌̈͌̈́͊̕e̷̢̖͇̲̥̤̺̜̞̼̤̓̏̍̄͌̉̚͘͘͠s̸͎̖̭̼̠̗̬̻̣̼̯͕̈́̂̽̈́̂̆͂̓͂͘̚͘͜͝͠ę̸̢̟̞͓͍͕̺̜͖͖͖͇̿̌̃̆͗͊͛͑̈́̏́̃̕͜͠ '
 			}
 		]
 	};
@@ -197,13 +222,13 @@
 	const allofBoard = [exec_panel_info, admin_panel_info, projects_panel_info];
 </script>
 
-<div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
+<!-- <div class="my-8 w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
 	<Header text="Officers" />
 	<p class="mb-2">
 		Our officer board does everything from handling corporate contacts, to teaching our year-long
 		projects, to planning memorable events, and more.
 	</p>
-</div>
+</div> -->
 
 {#each allofBoard as boardInfo}
 	<OfficerPanel {boardInfo} />
