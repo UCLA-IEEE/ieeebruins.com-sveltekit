@@ -11,9 +11,17 @@
 		{data.tier}
 	</div>
 	{#each data.company_info as company_info}
-		<div class="w-48 p-4">
-			<a href={company_info.url} target="_blank">
-				<img class="" src={company_info.img} alt="{company_info.name} Logo" />
+		<div class="flex min-h-20 w-48 flex-col items-center justify-center p-4">
+			<a
+				href={company_info.url}
+				target="_blank"
+				class="flex h-full max-h-12 w-full items-center justify-center"
+			>
+				<img
+					class="inline-block max-h-12 object-contain"
+					src={company_info.img}
+					alt="{company_info.name} Logo"
+				/>
 			</a>
 		</div>
 	{/each}

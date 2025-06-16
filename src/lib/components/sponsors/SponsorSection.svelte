@@ -3,7 +3,7 @@
 	import SponsorTier from '$lib/components/sponsors/SponsorTier.svelte';
 
 	import intel_logo from '$lib/images/sponsors/intel.svg';
-
+	import northropgrumman_logo from '$lib/images/sponsors/northrop_grumman.svg';
 	import sce_logo from '$lib/images/sponsors/southern_california_edison.svg';
 	import lockheedmartin_logo from '$lib/images/sponsors/lockheed_martin.svg';
 	import boeing_logo from '$lib/images/sponsors/boeing.svg';
@@ -19,6 +19,11 @@
 					name: 'Intel',
 					img: intel_logo,
 					url: 'https://www.intel.com/content/www/us/en/homepage.html'
+				},
+				{
+					name: 'Northrop Grumman',
+					img: northropgrumman_logo,
+					url: 'https://www.northropgrumman.com/'
 				}
 			]
 		},
