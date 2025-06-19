@@ -28,7 +28,7 @@
 		something, say something!
 	</p>
 	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSdEWyJDnWg1s3BX48aMv_XREFgPhJCYY6wav9V9sHdujLaXDQ/viewform"
+		href="https://docs.google.com/forms/d/e/1FAIpQLSd3zhGtzeBaksHWh24ot37vVBziyWahKOWzPIyiX-46jQ3qYw/viewform"
 		class="my-2 block font-bold text-primary hover:underline"
 		target="_blank">Anonymous Reporting Form</a
 	>
