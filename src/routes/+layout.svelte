@@ -48,7 +48,7 @@
 					<li><a href="/lab">Lab</a></li>
 					<li><a href="/officers">Officers</a></li>
 					<li><a href="/sponsors">Sponsors</a></li>
-					<li><a href="/edi">EDI</a></li>
+					<li><a href="/ie">IE</a></li>
 				</ul>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 				<li><a href="/lab">Lab</a></li>
 				<li><a href="/officers">Officers</a></li>
 				<li><a href="/sponsors">Sponsors</a></li>
-				<li><a href="/edi">EDI</a></li>
+				<li><a href="/ie">IE</a></li>
 			</ul>
 		</div>
 	</div>

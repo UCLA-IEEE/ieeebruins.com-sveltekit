@@ -102,7 +102,7 @@
 			{
 				name: 'Amy Zhao',
 				img_src: amy,
-				position: 'Events Coordinator & EDI Chair'
+				position: 'Events Coordinator & IE Chair'
 			},
 			{
 				name: 'Ethan Lai',

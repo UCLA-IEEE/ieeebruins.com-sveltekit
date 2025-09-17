@@ -29,7 +29,7 @@
 			<a href="/officers" role="button" class="btn text-base-100">Officers</a>
 		</li>
 		<li>
-			<a href="/edi" role="button" class="btn text-base-100">EDI</a>
+			<a href="/ie" role="button" class="btn text-base-100">IE</a>
 		</li>
 	</ul>
 </li>

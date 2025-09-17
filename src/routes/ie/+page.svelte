@@ -3,7 +3,7 @@
 </script>
 
 <div class="my-8 min-h-screen w-full self-center px-4 lg:mx-auto lg:max-w-screen-lg">
-	<Header text="Equity, Diversity, and Inclusion" />
+	<Header text="Inclusive Excellence" />
 
 	<p>
 		IEEE at UCLA is committed to creating an inclusive, welcoming environment for all members,
