@@ -1,0 +1,9 @@
+{
+	"redirects": [
+		{
+			"source": "/form/test",
+			"destination": "https://docs.google.com/forms/d/e/1FAIpQLSdV5lujVVmBaWvcQdnE0ZdWjzGmpqKgDo-TdX_uTk0Okn8kIg/viewform?usp=dialog",
+			"permanent": false
+		}
+	]
+}
