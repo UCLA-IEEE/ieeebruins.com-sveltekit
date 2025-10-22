@@ -156,14 +156,14 @@
 			{
 				name: 'Holden Grissett',
 				img_src: holden,
-				position: 'Pocket Racers Lead',
+				position: 'Donkey Racers Lead',
 				description:
 					"Hey friends - I'm Holden and I'm a final year transfer CS major. I also love Physics ❤️ and cats. Ask me about my chameleon."
 			},
 			{
 				name: 'Jerard Agravante',
 				img_src: jerard,
-				position: 'Pocket Racers Lead',
+				position: 'Donkey Racers Lead',
 				description: 'I love Victor'
 			},
 			{

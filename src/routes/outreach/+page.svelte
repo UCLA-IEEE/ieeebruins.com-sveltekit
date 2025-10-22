@@ -22,7 +22,7 @@
 		{
 			title: 'Community College Workshops',
 			description:
-				'We have worked with El Camino and Cerritos College to organize technical workshops that teach the basics of electrical engineering and design. Our main goal with these workshops is to help prepare these students with the practical skills necessary to succeed as they continue on into their engineering journeys. If you are interested in learning more about these workshops, feel free to contact us at outreach@ieeebruins.com.',
+				'We have worked with El Camino, Pierce, and Cerritos College to organize technical workshops that teach the basics of electrical engineering and design. Our main goal with these workshops is to help prepare these students with the practical skills necessary to succeed as they continue on into their engineering journeys. If you are interested in learning more about these workshops, feel free to contact us at outreach@ieeebruins.com.',
 			images: [ccw1, ccw2],
 			nav_id: 'ccw'
 		},

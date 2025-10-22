@@ -34,16 +34,16 @@
 			images: [mm1, mm2]
 		},
 		{
-			project_name: 'Pocket Racers (PR)',
+			project_name: 'Donkey Racers (DR)',
 			slogan: 'No License Required',
 			description:
-				'The Pocket Racers project is a hands-on introduction to how computers see and react to the world around them. No prior experience is required; students will get a crash course in Raspberry Pis, motor control, computer vision, and elementary machine learning techniques by building a fully autonomous self-driving car using just a Raspberry Pi, some motors, and a camera.',
+				'The Donkey Racers project is a hands-on introduction to how computers see and react to the world around them. No prior experience is required; students will get a crash course in Raspberry Pis, motor control, computer vision, and elementary machine learning techniques by building a fully autonomous self-driving car using just a Raspberry Pi, some motors, and a camera.',
 			website: 'https://projects.ieeebruins.com/pocket-racers/',
 			project_id: 'pr',
 			images: [pr1, pr2]
 		},
 		{
-			project_name: 'Digital Audio Visualizer (DAV)',
+			project_name: 'Digital Design, Architecture, and Verification (DAV)',
 			slogan: 'Learn to Think Logically',
 			description:
 				'DAV bridges the gap between hardware and software. We’ll be teaching you about digital logic concepts, digital signal processing techniques, and the FPGA design process. By the end of the year, we’ll create a device that can calculate and visualize the frequencies of audio signals using an FPGA. If you’re wondering what digital logic is all about, DAV is the project for you.',
