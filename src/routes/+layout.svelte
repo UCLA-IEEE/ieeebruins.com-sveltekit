@@ -3,6 +3,7 @@
 
 	import IeeeLogo from '../lib/components/IeeeLogo.svelte';
 	import FooterButton from './FooterButton.svelte';
+	import linkedin from '$lib/images/linkedin.svg';
 
 	import NavList from './NavList.svelte';
 	import { Menu, ChevronDown, ChevronRight } from 'lucide-svelte';
@@ -79,6 +80,15 @@
 				/>
 				<FooterButton href="https://github.com/UCLA-IEEE/" alt="GitHub logo" iconSlug="github" />
 				<FooterButton href="https://discord.gg/RREtsea" alt="Discord logo" iconSlug="discord" />
+
+				<!-- simple-icons doesn't support LinkedIn logo, so we use a custom image -->
+				<a
+					role="button"
+					href="https://www.linkedin.com/company/ieee-student-branch-ucla"
+					class="group btn btn-circle shadow-sm hover:invert dark:shadow-gray-500"
+				>
+					<img alt="LinkedIn logo" height="32" width="32" src={linkedin} />
+				</a>
 			</div>
 		</div>
 	</footer>
