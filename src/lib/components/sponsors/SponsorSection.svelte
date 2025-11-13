@@ -5,6 +5,7 @@
 	import intel_logo from '$lib/images/sponsors/intel.svg';
 	import northropgrumman_logo from '$lib/images/sponsors/northrop_grumman.svg';
 	import sce_logo from '$lib/images/sponsors/southern_california_edison.svg';
+	import rtx_logo from '$lib/images/sponsors/rtx.svg';
 	import lockheedmartin_logo from '$lib/images/sponsors/lockheed_martin.svg';
 	import boeing_logo from '$lib/images/sponsors/boeing.svg';
 	import ti_logo from '$lib/images/sponsors/texas_instruments.svg';
@@ -31,6 +32,7 @@
 			tier: 'Bronze',
 			tierColor: '[#CD7F32]',
 			company_info: [
+				{ name: 'RTX Corporation', img: rtx_logo, url: 'https://www.rtx.com/' },
 				{ name: 'Southern California Edison', img: sce_logo, url: 'https://www.sce.com/' },
 				{
 					name: 'Lockheed Martin',

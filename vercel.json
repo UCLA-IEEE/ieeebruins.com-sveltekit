@@ -4,6 +4,11 @@
 			"source": "/form/rohde-schwarz-rsvp",
 			"destination": "https://forms.gle/bddn4RUgC6Br5NM46",
 			"permanent": false
+		},
+		{
+			"source": "/form/verkada-f25",
+			"destination": "https://forms.gle/sAMzpNz5QQQzxD5E6",
+			"permanent": false
 		}
 	]
 }
