@@ -9,6 +9,21 @@
 			"source": "/form/verkada-f25",
 			"destination": "https://forms.gle/sAMzpNz5QQQzxD5E6",
 			"permanent": false
+		},
+		{
+			"source": "/officer-application",
+			"destination": "https://forms.gle/DpnR6R2eC3pfLApo6",
+			"permanent": false
+		},
+		{
+			"source": "/election-docs",
+			"destination": "https://docs.google.com/document/d/1mxHfrrqPmUnEdqJSuy6GWfAVNOUddC-eHdXv0A3OrCk/edit?usp=sharing",
+			"permanent": false
+		},
+		{
+			"source": "/officer-infosession",
+			"destination": "https://docs.google.com/presentation/d/1qyBbNc6IKoxsNlZxwF2xbPScIFhZAKg47hx4PjyR5m8/edit?usp=sharing",
+			"permanent": false
 		}
 	]
 }
