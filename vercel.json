@@ -24,6 +24,11 @@
 			"source": "/officer-infosession",
 			"destination": "https://docs.google.com/presentation/d/1qyBbNc6IKoxsNlZxwF2xbPScIFhZAKg47hx4PjyR5m8/edit?usp=sharing",
 			"permanent": false
+		},
+		{
+			"source": "/labfeedback",
+			"destination": "https://forms.gle/WQmqJBk1Yan5DZJG8",
+			"permanent": false
 		}
 	]
 }
