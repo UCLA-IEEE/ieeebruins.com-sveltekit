@@ -3,71 +3,65 @@
 	import OfficerPanel from '$lib/components/OfficerPanel.svelte';
 
 	// EXEC BOARD
-	import theo from '$lib/images/officers/theo.jpg';
+	import sanjit from '$lib/images/officers/sanjit.jpg';
 	import rachel from '$lib/images/officers/rachel.jpg';
-	import eugenia from '$lib/images/officers/eugenia.jpg';
-	import evan from '$lib/images/officers/evan.jpg';
-	import jace from '$lib/images/officers/jace.jpg';
+	import wyatt from '$lib/images/officers/wyatt.jpg';
+	import heidi from '$lib/images/officers/heidi.jpg';
+	import noosha from '$lib/images/officers/noosha.jpg';
 
 	// ADMIN BOARD
-	import jerry from '$lib/images/officers/jerry.jpg';
-	import emilyk from '$lib/images/officers/emilyk.jpg';
-	import heidi from '$lib/images/officers/heidi.jpg';
-	import emilyl from '$lib/images/officers/emilyl.jpg';
-	import amy from '$lib/images/officers/amy.jpg';
-	import ethan from '$lib/images/officers/ethan.jpg';
-	import joshua from '$lib/images/officers/joshua.jpg';
-	import kevin from '$lib/images/officers/kevin.jpg';
+	import matthew from '$lib/images/officers/matthew.jpg';
+	import connor from '$lib/images/officers/connor.jpg';
+	import aki from '$lib/images/officers/aki.jpg';
+	import thomas from '$lib/images/officers/thomas.jpg';
+	import brent from '$lib/images/officers/brent.jpg';
+	import landon from '$lib/images/officers/landon.jpg';
+	import joseph from '$lib/images/officers/joseph.jpg';
+	import zach from '$lib/images/officers/zach.jpg';
 
 	// PROJECTS BOARD
-	import noosha from '$lib/images/officers/noosha.jpg';
-	import wyatt from '$lib/images/officers/wyatt.jpg';
-	import michael from '$lib/images/officers/michael.jpg';
-	import nathan from '$lib/images/officers/nathan.jpg';
-	import holden from '$lib/images/officers/holden.jpg';
-	import jerard from '$lib/images/officers/jerard.jpg';
-	import adrian from '$lib/images/officers/adrian.jpg';
-	import bryan from '$lib/images/officers/bryan.jpg';
-	import nat from '$lib/images/officers/nat.jpg';
-	import victor from '$lib/images/officers/victor.jpg';
-	import jessie from '$lib/images/officers/jessie.jpg';
-	import kai from '$lib/images/officers/kai.jpg';
-	import prem from '$lib/images/officers/prem.jpg';
 	import parth from '$lib/images/officers/parth.jpg';
-	import sanjit from '$lib/images/officers/sanjit.jpg';
+	import jessie from '$lib/images/officers/jessie.jpg';
+	import bryan from '$lib/images/officers/bryan.jpg';
+	import willson from '$lib/images/officers/willson.jpg';
+	import johnny from '$lib/images/officers/johnny.jpg';
+	import safwa from '$lib/images/officers/safwa.jpg';
+	import joshbrazao from '$lib/images/officers/joshbrazao.jpg';
+	import kevinl from '$lib/images/officers/kevinl.jpg';
+	import kevinxiao from '$lib/images/officers/kevinxiao.jpg';
+	import kyle from '$lib/images/officers/kyle.jpg';
+	import sparsh from '$lib/images/officers/sparsh.jpg';
+	import jerard from '$lib/images/officers/jerard.jpg';
+	import jonathan from '$lib/images/officers/jonathan.jpg';
+	import francisco from '$lib/images/officers/francisco.jpg';
+	import adrian from '$lib/images/officers/adrian.jpg';
 
 	const exec_panel_info = {
 		title: 'Executive Board',
 		officers: [
 			{
-				name: 'Theo Zhang',
-				img_src: theo,
-				position: 'President',
-				description:
-					'Hello! I am a 4th year CS student. My main academic passions are ethical AI and applications of AI with a humanistic perspective. I love to read, write, cook, eat, and try new things. Feel free to reach out if you have any questions!'
+				name: 'Sanjit Sarda',
+				img_src: sanjit,
+				position: 'President'
+			},
+			{
+				name: 'Heidi Hu',
+				img_src: heidi,
+				position: 'IVP'
+			},
+			{
+				name: 'Wyatt Grover',
+				img_src: wyatt,
+				position: 'EVP'
+			},
+			{
+				name: 'Noosha Rahimi',
+				img_src: noosha,
+				position: 'EVP'
 			},
 			{
 				name: 'Rachel Yen',
 				img_src: rachel,
-				position: 'IVP',
-				description:
-					"hi! I'm third year EE major with a strong passion for eating. I'm currently in the field of circuits, but I'm also interested in computer architecture! DM me if you ever want to hang out and get a sweet treat or just yap :)"
-			},
-			{
-				name: 'Eugenia Cho',
-				img_src: eugenia,
-				position: 'EVP'
-			},
-			{
-				name: 'Evan Bird',
-				img_src: evan,
-				position: 'EVP',
-				description:
-					"Hey y'all! Im a fourth year EE major who likes getting outdoors, music (both listening and performance), and eating at new food/coffee spots. Holler at me if you want to chat :)"
-			},
-			{
-				name: 'Jace Fang',
-				img_src: jace,
 				position: 'Treasurer'
 			}
 		]
@@ -77,47 +71,43 @@
 		title: 'Admin Board',
 		officers: [
 			{
-				name: 'Jerry Fang',
-				img_src: jerry,
+				name: 'Matthew Chandler',
+				img_src: matthew,
 				position: 'Corporate Relations'
 			},
 			{
-				name: 'Emily Kuczynski',
-				img_src: emilyk,
-				position: 'Secretary',
-				description:
-					"Hi everyone! I'm a fourth year computer engineering major and am minoring in Asian Languages (Korean). Outside of class I love writing poetry, learning languages/linguistics, drinking coffee, and eating really spicy food. Feel free to say hi if you see me around! :)"
+				name: 'Conor Clinton',
+				img_src: connor,
+				position: 'Secretary'
 			},
 			{
-				name: 'Heidi Hu',
-				img_src: heidi,
-				position: 'Publicity',
-				description: 'hi -d'
+				name: 'Brent Grantham',
+				img_src: brent,
+				position: 'Publicity'
 			},
 			{
-				name: 'Emily Lu',
-				img_src: emilyl,
+				name: 'Aki Subramaniam',
+				img_src: aki,
 				position: 'Events Coordinator'
 			},
 			{
-				name: 'Amy Zhao',
-				img_src: amy,
-				position: 'Events Coordinator & IE Chair'
+				name: 'Thomas Le',
+				img_src: thomas,
+				position: 'Events Coordinator'
 			},
 			{
-				name: 'Ethan Lai',
-				img_src: ethan,
-				position: 'Outreach Coordinator',
-				description: 'w0w'
-			},
-			{
-				name: 'Joshua Burpee',
-				img_src: joshua,
+				name: 'Landon Archuleta',
+				img_src: landon,
 				position: 'Outreach Coordinator'
 			},
 			{
-				name: 'Kevin Zhang',
-				img_src: kevin,
+				name: 'Joseph Kung',
+				img_src: joseph,
+				position: 'Outreach Coordinator'
+			},
+			{
+				name: 'Zach Fischer',
+				img_src: zach,
 				position: 'Webmaster',
 				description: "To know what you know and to know what you don't know is to know. "
 			}
@@ -128,93 +118,79 @@
 		title: 'Projects Board',
 		officers: [
 			{
-				name: 'Noosha Rahimi',
-				img_src: noosha,
-				position: 'OPS Lead',
-				description:
-					"Hi! I'm a second year computer engineering student.I love trying new coffee shops, going to the beach, and yoga! If you ever see me on campus, please say hi! "
+				name: 'Safwa Khan',
+				img_src: safwa,
+				position: 'OPS Lead'
 			},
 			{
-				name: 'Wyatt Grover',
-				img_src: wyatt,
-				position: 'OPS Lead',
-				description:
-					"Hi! I'm a 2nd year computer engineering student who loves movies, music, and cartoons, I'm always down to yap about anything and everything!"
+				name: 'Joshua Brazao',
+				img_src: joshbrazao,
+				position: 'OPS Lead'
 			},
 			{
-				name: 'Nathan Chen',
-				img_src: nathan,
-				position: 'Micromouse Lead',
-				description: 'Hello!'
+				name: 'Kevin Liu',
+				img_src: kevinl,
+				position: 'Micromouse Lead'
 			},
 			{
-				name: 'Michael Ward',
-				img_src: michael,
-				position: 'Micromouse Lead',
-				description: 'trolled'
+				name: 'Kevin Xiao',
+				img_src: kevinxiao,
+				position: 'Micromouse Lead'
 			},
 			{
-				name: 'Holden Grissett',
-				img_src: holden,
-				position: 'Donkey Racers Lead',
-				description:
-					"Hey friends - I'm Holden and I'm a final year transfer CS major. I also love Physics ❤️ and cats. Ask me about my chameleon."
+				name: 'Kyle Pak',
+				img_src: kyle,
+				position: 'Donkey Racers Lead'
+			},
+			{
+				name: 'Sparsh Johri',
+				img_src: sparsh,
+				position: 'Donkey Racers Lead'
 			},
 			{
 				name: 'Jerard Agravante',
 				img_src: jerard,
-				position: 'Donkey Racers Lead',
-				description: 'I love Victor'
+				position: 'DAV Lead'
+			},
+			{
+				name: 'Jonathan Xue',
+				img_src: jonathan,
+				position: 'DAV Lead'
+			},
+			{
+				name: 'Francisco Cardenas Beltran',
+				img_src: francisco,
+				position: 'WRAP Lead'
 			},
 			{
 				name: 'Adrian Rozario',
 				img_src: adrian,
-				position: 'DAV Lead',
-				description: 'The results were astounding! Absolutely nothing happened.'
+				position: 'WRAP Lead'
 			},
 			{
-				name: 'Bryan Liu',
-				img_src: bryan,
-				position: 'DAV Lead',
-				description: 'DAV on the haters'
+				name: 'Willson Luo',
+				img_src: willson,
+				position: 'Workshops Manager'
 			},
 			{
-				name: 'Nat Nguyendinh',
-				img_src: nat,
-				position: 'WRAP Lead',
-				description: 'bet'
-			},
-			{
-				name: 'Victor Zhang',
-				img_src: victor,
-				position: 'WRAP Lead',
-				description: 'I love Jerard'
+				name: 'Johnny You',
+				img_src: johnny,
+				position: 'Workshops Manager'
 			},
 			{
 				name: 'Jessie Chan',
 				img_src: jessie,
-				position: 'Workshops Manager'
+				position: 'Projects and Lab Manager'
 			},
 			{
-				name: 'Kai Wang',
-				img_src: kai,
-				position: 'Workshops Manager'
+				name: 'Bryan Liu',
+				img_src: bryan,
+				position: 'Projects and Lab Manager'
 			},
 			{
 				name: 'Parth Pandhare',
 				img_src: parth,
-				position: 'Projects and Lab Manager'
-			},
-			{
-				name: 'Premkumar Giridhar',
-				img_src: prem,
-				position: 'Projects and Lab Manager'
-			},
-			{
-				name: 'Sanjit Sarda',
-				img_src: sanjit,
-				position: 'Research and Development',
-				description: 'I like C̴̙̹͐̐̓̈͛͜ḧ̵̠̦́͌̽͒͗̕ę̸̤̖͎̗̜̘̯͇̱̮͔̌̾͌̈͌̈́͊̕e̷̢̖͇̲̥̤̺̜̞̼̤̓̏̍̄͌̉̚͘͘͠s̸͎̖̭̼̠̗̬̻̣̼̯͕̈́̂̽̈́̂̆͂̓͂͘̚͘͜͝͠ę̸̢̟̞͓͍͕̺̜͖͖͖͇̿̌̃̆͗͊͛͑̈́̏́̃̕͜͠ '
+				position: 'Research and Development'
 			}
 		]
 	};
