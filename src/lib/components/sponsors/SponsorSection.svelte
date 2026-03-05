@@ -13,6 +13,17 @@
 	import { stringify } from 'postcss';
 
 	const sponsors = [
+		{
+			tier: 'Gold',
+			tierColor: 'secondary',
+			company_info: [
+				{
+					name: 'Northrop Grumman',
+					img: northropgrumman_logo,
+					url: 'https://www.northropgrumman.com/'
+				}
+			]
+		},
 		// {
 		// 	tier: 'Silver',
 		// 	tierColor: 'gray-400',
@@ -43,6 +54,17 @@
 				// },
 				// { name: 'Boeing', img: boeing_logo, url: 'https://www.boeing.com/' },
 				// { name: 'Texas Instruments', img: ti_logo, url: 'https://www.ti.com/' }
+			]
+		},
+		{
+			tier: 'Workshops',
+			tierColor: 'primary',
+			company_info: [
+				{
+					name: 'Texas Instruments',
+					img: ti_logo,
+					url: 'https://www.ti.com/'
+				}
 			]
 		}
 	];
