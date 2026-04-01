@@ -75,3 +75,5 @@ not be changed:
     helpful to read everything under "Core Concepts"
 - DaisyUI: <https://daisyui.com/docs/use/>
   - Just the "Use" article is enough
+
+# Add forwarding/rerouting links in `vercel.json`

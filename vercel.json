@@ -29,6 +29,11 @@
 			"source": "/labfeedback",
 			"destination": "https://forms.gle/WQmqJBk1Yan5DZJG8",
 			"permanent": false
+		},
+		{
+			"source": "/voter-registration",
+			"destination": "https://forms.gle/6h51smMPo5UDTb456",
+			"permanent": false
 		}
 	]
 }
