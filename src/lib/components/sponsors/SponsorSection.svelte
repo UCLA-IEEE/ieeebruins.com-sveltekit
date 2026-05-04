@@ -44,8 +44,8 @@
 			tier: 'Bronze',
 			tierColor: '[#CD7F32]',
 			company_info: [
-				{ name: 'Rivian', img: rivian_logo, url: 'https://www.rivian.com/' }
-				// { name: 'RTX Corporation', img: rtx_logo, url: 'https://www.rtx.com/' },
+				{ name: 'Rivian', img: rivian_logo, url: 'https://www.rivian.com/' },
+				{ name: 'RTX Corporation', img: rtx_logo, url: 'https://www.rtx.com/' }
 				// { name: 'Southern California Edison', img: sce_logo, url: 'https://www.sce.com/' },
 				// {
 				// 	name: 'Lockheed Martin',
