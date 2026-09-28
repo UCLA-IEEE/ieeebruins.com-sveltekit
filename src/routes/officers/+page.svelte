@@ -3,65 +3,66 @@
 	import OfficerPanel from '$lib/components/OfficerPanel.svelte';
 
 	// EXEC BOARD
-	import sanjit from '$lib/images/officers/sanjit.jpg';
-	import rachel from '$lib/images/officers/rachel.jpg';
-	import wyatt from '$lib/images/officers/wyatt.jpg';
-	import heidi from '$lib/images/officers/heidi.jpg';
-	import noosha from '$lib/images/officers/noosha.jpg';
+	import jessie from '$lib/images/officers/JessieChan.jpg';
+	import joseph from '$lib/images/officers/JosephKung.jpg';
+	import brent from '$lib/images/officers/BrentGrantham.jpg';
+	import aki from '$lib/images/officers/AkiSubramaniam.jpg';
+	import thomas from '$lib/images/officers/ThomasLe.jpg';
 
 	// ADMIN BOARD
-	import matthew from '$lib/images/officers/matthew.jpg';
-	import connor from '$lib/images/officers/connor.jpg';
-	import aki from '$lib/images/officers/aki.jpg';
-	import thomas from '$lib/images/officers/thomas.jpg';
-	import brent from '$lib/images/officers/brent.jpg';
-	import landon from '$lib/images/officers/landon.jpg';
-	import joseph from '$lib/images/officers/joseph.jpg';
-	import zach from '$lib/images/officers/zach.jpg';
+	import kevinXiao from '$lib/images/officers/KevinXiao.jpg';
+	import simon from '$lib/images/officers/SimonAks.jpg';
+	import neilKhan from '$lib/images/officers/NeilKhan.jpg';
+	import jaemin from '$lib/images/officers/JaeminKwak.jpg';
+	import wyatt from '$lib/images/officers/WyattGrover.jpg';
+	import neilYang from '$lib/images/officers/NeilYang.jpg';
+	import justin from '$lib/images/officers/JustinOh.jpg';
+	import sophia from '$lib/images/officers/SophiaCoulsell.jpg';
 
 	// PROJECTS BOARD
-	import parth from '$lib/images/officers/parth.jpg';
-	import jessie from '$lib/images/officers/jessie.jpg';
-	import bryan from '$lib/images/officers/bryan.jpg';
-	import willson from '$lib/images/officers/willson.jpg';
-	import johnny from '$lib/images/officers/johnny.jpg';
-	import safwa from '$lib/images/officers/safwa.jpg';
-	import joshbrazao from '$lib/images/officers/joshbrazao.jpg';
-	import kevinl from '$lib/images/officers/kevinl.jpg';
-	import kevinxiao from '$lib/images/officers/kevinxiao.jpg';
-	import kyle from '$lib/images/officers/kyle.jpg';
-	import sparsh from '$lib/images/officers/sparsh.jpg';
-	import jerard from '$lib/images/officers/jerard.jpg';
-	import jonathan from '$lib/images/officers/jonathan.jpg';
-	import francisco from '$lib/images/officers/francisco.jpg';
-	import adrian from '$lib/images/officers/adrian.jpg';
+	import johnny from '$lib/images/officers/JohnnyYou.jpg';
+	import kevinLiu from '$lib/images/officers/KevinLiu.jpg';
+	import willson from '$lib/images/officers/WillsonLuo.jpg';
+	import jeremy from '$lib/images/officers/JeremyChen.jpg';
+	import levi from '$lib/images/officers/LeviLichtmaher.jpg';
+	import zunaira from '$lib/images/officers/ZunairaKaisar.jpg';
+	import connor from '$lib/images/officers/ConnorJulian.jpg';
+	import james from '$lib/images/officers/JamesNguyen.jpg';
+	import brandon from '$lib/images/officers/BrandonCrossman.jpg';
+	import zachary from '$lib/images/officers/ZacharyJoseph.jpg';
+	import parik from '$lib/images/officers/ParikMehta.jpg';
+	import joshua from '$lib/images/officers/JoshuaBrazao.jpg';
+	import jerry from '$lib/images/officers/JerryHuang.jpg';
+	import chienMu from '$lib/images/officers/Chien-MuYang.jpg';
+	import dyllan from '$lib/images/officers/DyllanGoldstein.jpg';
 
 	const exec_panel_info = {
 		title: 'Executive Board',
 		officers: [
 			{
-				name: 'Sanjit Sarda',
-				img_src: sanjit,
+				name: 'Jessie Chan',
+				img_src: jessie,
 				position: 'President'
 			},
 			{
-				name: 'Heidi Hu',
-				img_src: heidi,
+				name: 'Joseph Kung',
+				img_src: joseph,
 				position: 'IVP'
 			},
 			{
-				name: 'Wyatt Grover',
-				img_src: wyatt,
+				name: 'Brent Grantham',
+				img_src: brent,
 				position: 'EVP'
 			},
 			{
-				name: 'Noosha Rahimi',
-				img_src: noosha,
-				position: 'EVP'
+				name: 'Aki Subramaniam',
+				img_src: aki,
+				position: 'EVP',
+				object_position: '50% 25%'
 			},
 			{
-				name: 'Rachel Yen',
-				img_src: rachel,
+				name: 'Thomas Le',
+				img_src: thomas,
 				position: 'Treasurer'
 			}
 		]
@@ -71,45 +72,44 @@
 		title: 'Admin Board',
 		officers: [
 			{
-				name: 'Matthew Chandler',
-				img_src: matthew,
+				name: 'Kevin Xiao',
+				img_src: kevinXiao,
 				position: 'Corporate Relations'
 			},
 			{
-				name: 'Conor Clinton',
-				img_src: connor,
+				name: 'Simon Aks',
+				img_src: simon,
 				position: 'Secretary'
 			},
 			{
-				name: 'Brent Grantham',
-				img_src: brent,
+				name: 'Neil Khan',
+				img_src: neilKhan,
+				position: 'Events Coordinator'
+			},
+			{
+				name: 'Jaemin Kwak',
+				img_src: jaemin,
+				position: 'Events Coordinator'
+			},
+			{
+				name: 'Wyatt Grover',
+				img_src: wyatt,
 				position: 'Publicity'
 			},
 			{
-				name: 'Aki Subramaniam',
-				img_src: aki,
-				position: 'Events Coordinator'
-			},
-			{
-				name: 'Thomas Le',
-				img_src: thomas,
-				position: 'Events Coordinator'
-			},
-			{
-				name: 'Landon Archuleta',
-				img_src: landon,
+				name: 'Neil Yang',
+				img_src: neilYang,
 				position: 'Outreach Coordinator'
 			},
 			{
-				name: 'Joseph Kung',
-				img_src: joseph,
+				name: 'Justin Oh',
+				img_src: justin,
 				position: 'Outreach Coordinator'
 			},
 			{
-				name: 'Zach Fischer',
-				img_src: zach,
-				position: 'Webmaster',
-				description: "To know what you know and to know what you don't know is to know. "
+				name: 'Sophia Coulsell',
+				img_src: sophia,
+				position: 'Webmaster'
 			}
 		]
 	};
@@ -118,79 +118,83 @@
 		title: 'Projects Board',
 		officers: [
 			{
-				name: 'Safwa Khan',
-				img_src: safwa,
-				position: 'OPS Lead'
-			},
-			{
-				name: 'Joshua Brazao',
-				img_src: joshbrazao,
-				position: 'OPS Lead'
+				name: 'Johnny You',
+				img_src: johnny,
+				position: 'Research and Development'
 			},
 			{
 				name: 'Kevin Liu',
-				img_src: kevinl,
-				position: 'Micromouse Lead'
-			},
-			{
-				name: 'Kevin Xiao',
-				img_src: kevinxiao,
-				position: 'Micromouse Lead'
-			},
-			{
-				name: 'Kyle Pak',
-				img_src: kyle,
-				position: 'Donkey Racers Lead'
-			},
-			{
-				name: 'Sparsh Johri',
-				img_src: sparsh,
-				position: 'Donkey Racers Lead'
-			},
-			{
-				name: 'Jerard Agravante',
-				img_src: jerard,
-				position: 'DAV Lead'
-			},
-			{
-				name: 'Jonathan Xue',
-				img_src: jonathan,
-				position: 'DAV Lead'
-			},
-			{
-				name: 'Francisco Cardenas Beltran',
-				img_src: francisco,
-				position: 'WRAP Lead'
-			},
-			{
-				name: 'Adrian Rozario',
-				img_src: adrian,
-				position: 'WRAP Lead'
+				img_src: kevinLiu,
+				position: 'Projects and Lab Manager'
 			},
 			{
 				name: 'Willson Luo',
 				img_src: willson,
-				position: 'Workshops Manager'
-			},
-			{
-				name: 'Johnny You',
-				img_src: johnny,
-				position: 'Workshops Manager'
-			},
-			{
-				name: 'Jessie Chan',
-				img_src: jessie,
 				position: 'Projects and Lab Manager'
 			},
 			{
-				name: 'Bryan Liu',
-				img_src: bryan,
-				position: 'Projects and Lab Manager'
+				name: 'Jeremy Chen',
+				img_src: jeremy,
+				position: 'Workshops Manager'
 			},
 			{
-				name: 'Parth Pandhare',
-				img_src: parth,
-				position: 'Research and Development'
+				name: 'Levi Lichtmaher',
+				img_src: levi,
+				position: 'Workshops Manager',
+				object_position: '50% 30%'
+			},
+			{
+				name: 'Zunaira Kaisar',
+				img_src: zunaira,
+				position: 'OPS Lead'
+			},
+			{
+				name: 'Connor Julian',
+				img_src: connor,
+				position: 'OPS Lead'
+			},
+			{
+				name: 'James Nguyen',
+				img_src: james,
+				position: 'Micromouse Lead'
+			},
+			{
+				name: 'Brandon Crossman',
+				img_src: brandon,
+				position: 'Micromouse Lead',
+				object_position: '50% 25%'
+			},
+			{
+				name: 'Zachary Joseph',
+				img_src: zachary,
+				position: 'Donkey Racers Lead',
+				object_position: '50% 30%'
+			},
+			{
+				name: 'Parik Mehta',
+				img_src: parik,
+				position: 'Donkey Racers Lead'
+			},
+			{
+				name: 'Joshua Brazao',
+				img_src: joshua,
+				position: 'DAV Lead',
+				object_position: '50% 25%'
+			},
+			{
+				name: 'Jerry Huang',
+				img_src: jerry,
+				position: 'DAV Lead'
+			},
+			{
+				name: 'Chien-Mu Yang',
+				img_src: chienMu,
+				position: 'WRAP Lead'
+			},
+			{
+				name: 'Dyllan Goldstein',
+				img_src: dyllan,
+				position: 'WRAP Lead'
 			}
 		]
 	};
