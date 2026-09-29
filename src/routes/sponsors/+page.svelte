@@ -1,7 +1,7 @@
 <script lang="ts">
 	import SponsorCard from '$lib/components/sponsors/SponsorCard.svelte';
 	import SponsorSection from '$lib/components/sponsors/SponsorSection.svelte';
-	import brochure from '$lib/files/SponsorshipBrochure2025.pdf';
+	import brochure from '$lib/files/IEEE_Club_Brochure_26_27.pdf';
 
 	const tiers = [
 		{
